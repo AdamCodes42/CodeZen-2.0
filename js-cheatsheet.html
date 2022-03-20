@@ -1,0 +1,3202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/js-cheatsheet.css">
+    <link rel="icon" type="image/png" style="filter: invert(100%);" sizes="32x32" href="./images/favicon/favicon-1.png">
+    <title>JS-Cheatsheet | CodeZen</title>
+</head>
+<body>
+  <nav>
+    <ul class="nav-bar">
+      <li ><a  class="nav-links" href="./html-cheatsheet.html">HTML-Cheatsheet</a> </li>
+      <li ><a class="nav-links" href="./css-cheatsheet.html">CSS-CheatSheet</a> </li>
+    </ul>
+   </nav>
+   <header>
+     <img src="" alt=""><img src="./images/js-logo.png" alt="">
+     <h1>JS Cheatsheet</h1>
+     <img src="./images/js-logo.png" alt="">
+   </header>
+<div class="search-bar">  
+  <input type="text" id="searchstring" name="search" placeholder="Search.." oninput="filterSearch()">
+</div>
+<div id="jsreftable">
+<table class="js-table">
+  <tr>
+    <th style="width:20%">Property/Method</th>
+    <th>Description</th>
+    <th style="width:150px">Belongs To</th>
+  </tr>
+  <tr>
+    <td><a  >abs()</a></td>
+    <td>Returns the absolute value of x</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >accessKey</a></td>
+    <td>Sets or returns the accesskey attribute of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >acos()</a></td>
+    <td>Returns the arccosine of x, in radians</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >acosh()</a></td>
+    <td>Returns the hyperbolic arccosine of x</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >activeElement</a></td>
+    <td>Returns the currently focused element in the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >addEventListener()</a></td>
+    <td>Attaches an event handler to the document</td>
+    <td><a  >Document</a>, <a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >adoptNode()</a></td>
+  <td>Adopts a node from another document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >alert()</a></td>
+    <td>Displays an alert box with a message and an OK button</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >altKey</a></td>
+    <td>Returns whether the &quot;ALT&quot; key was pressed when the mouse event was triggered</td>
+    <td><a  >MouseEvent</a>, <a  >KeyboardEvent</a>, 
+    <a  >TouchEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >anchors</a></td>
+    <td>Returns a collection of all &lt;a&gt; elements in the document that have a name attribute</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >animationName</a></td>
+    <td>Returns the name of the animation</td>
+    <td><a  >AnimationEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >appCodeName</a></td>
+    <td>Returns the code name of the browser</td>
+    <td><a  >Navigator</a></td>
+  </tr>
+  <tr>
+  <td><a  >appendChild()</a></td>
+  <td>Adds a new child node, to an element, as the last child node</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >applets</a></td>
+    <td>Returns a collection of all &lt;applet&gt; elements in the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >appName</a></td>
+    <td>Returns the name of the browser</td>
+    <td><a  >Navigator</a></td>
+  </tr>
+  <tr>
+    <td><a  >appVersion</a></td>
+    <td>Returns the version information of the browser</td>
+    <td><a  >Navigator</a></td>
+  </tr>
+  <tr>
+    <td><a  >asin()</a></td>
+    <td>Returns the arcsine of x, in radians</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >asinh()</a></td>
+    <td>Returns the hyperbolic arcsine of x</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >assert()</a></td>
+    <td>Writes an error message to the console if the assertion is false</td>
+    <td><a  >Console</a></td>
+    </tr>
+  <tr>
+    <td><a  >assign()</a></td>
+    <td>Loads a new document</td>
+    <td><a  >Location</a></td>
+  </tr>
+  <tr>
+    <td><a  >atan()</a></td>
+    <td>Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >atan2()</a></td>
+    <td>Returns the arctangent of the quotient of its arguments</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >atanh()</a></td>
+    <td>Returns the hyperbolic arctangent of x</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >atob()</a></td>
+    <td>Decodes a base-64 encoded string</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+  <td><a  >attributes</a></td>
+  <td>Returns a NamedNodeMap of an element's attributes</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >availHeight</a></td>
+    <td>Returns the height of the screen (excluding the Windows Taskbar)</td>
+    <td><a  >Screen</a></td>
+  </tr>
+  <tr>
+    <td><a  >availWidth</a></td>
+    <td>Returns the width of the screen (excluding the Windows Taskbar)</td>
+    <td><a  >Screen</a></td>
+  </tr>
+  <tr>
+    <td><a  >back()</a></td>
+    <td>Loads the previous URL in the history list</td>
+    <td><a  >History</a></td>
+    </tr>
+  <tr>
+  <td><a  >baseURI</a></td>
+  <td>Returns the absolute base URI of a document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+  <td><a  >blur()</a></td>
+  <td>Removes focus from an element</td>
+    <td><a  >Element</a>, <a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >body</a></td>
+    <td>Sets or returns the document's body (the &lt;body&gt; element)</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+<td><a  >break</a></td>
+<td>Exits a switch or a loop</td>
+  <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+    <td><a  >btoa()</a></td>
+    <td>Encodes a string in base-64</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >bubbles</a></td>
+    <td>Returns whether or not a specific event is a bubbling event</td>
+    <td><a  >Event</a></td>
+  </tr>
+  <tr>
+    <td><a  >button</a></td>
+    <td>Returns which mouse button was pressed when the mouse event was triggered</td>
+    <td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >buttons</a></td>
+    <td>Returns which mouse buttons were pressed when the mouse event was triggered</td>
+    <td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >cancelable</a></td>
+    <td>Returns whether or not an event can have its default action prevented</td>
+    <td><a  >Event</a></td>
+  </tr>
+  <tr>
+    <td><a  >cbrt()</a></td>
+    <td>Returns the cubic root of x</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >ceil()</a></td>
+    <td>Returns x, rounded upwards to the nearest integer</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td>changeTouches</td>
+    <td>Returns a list of all the touch objects whose state changed between the 
+    previous touch and this touch</td>
+    <td><a  >TouchEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >characterSet</a></td>
+  <td>Returns the character encoding for the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >charAt()</a></td>
+    <td>Returns the character at the specified index (position)</td>
+    <td><a  >String</a></td>
+  </tr>
+  <tr>
+    <td><a  >charCode</a></td>
+    <td>Returns the Unicode character code of the key that triggered the  onkeypress event</td>
+    <td><a  >KeyboardEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >charCodeAt()</a></td>
+    <td>Returns the Unicode of the character at the specified index</td>
+    <td><a  >String</a></td>
+  </tr>
+  <tr>
+  <td><a  >charset</a></td>
+  <td><span class="deprecated">Deprecated.</span> Use <a  >characterSet</a> instead. Returns the character encoding for the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+  <td><a  >childElementCount</a></td>
+  <td>Returns the number of child elements an element has</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >childNodes</a></td>
+  <td>Returns a collection of an element's child nodes (including text and comment nodes)</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >children</a></td>
+  <td>Returns a collection of an element's child element (excluding text and comment nodes)</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >classList</a></td>
+    <td>Returns the class name(s) of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >class</a></td>
+    <td>Declares a class</td>
+    <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+    <td><a  >className</a></td>
+    <td>Sets or returns the value of the class attribute of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >clear()</a></td>
+    <td>Clears the console</td>
+    <td><a  >Console</a>, <a  >Storage</a></td>
+    </tr>
+  <tr>
+    <td><a  >clearInterval()</a></td>
+    <td>Clears a timer set with setInterval()</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >clearTimeout()</a></td>
+    <td>Clears a timer set with setTimeout()</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td>clearWatch()</td>
+    <td>Unregister location/error monitoring handlers previously installed using 
+    Geolocation.watchPosition()</td>
+    <td><a  >Geolocation</a></td>
+  </tr>
+  <tr>
+  <td><a  >click()</a></td>
+  <td>Simulates a mouse-click on an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >clientHeight</a></td>
+    <td>Returns the height of an element, including padding</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >clientLeft</a></td>
+    <td>Returns the width of the left border of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >clientTop</a></td>
+    <td>Returns the width of the top border of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >clientWidth</a></td>
+    <td>Returns the width of an element, including padding</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >clientX</a></td>
+    <td>Returns the horizontal coordinate of the mouse pointer, relative to the current window, when  the mouse event was triggered</td>
+    <td><a  >MouseEvent</a>, 
+    <a  >TouchEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >clientY</a></td>
+    <td>Returns the vertical coordinate of the mouse pointer, relative to the current window, when  the mouse event was triggered</td>
+    <td><a  >MouseEvent</a>, 
+    <a  >TouchEvent</a></td>
+  </tr>
+  <tr>
+    <td>clipboardData</td>
+    <td>Returns an object containing the data affected by the clipboard 
+    operation</td>
+    <td><a  >ClipboardData</a></td>
+  </tr>
+  <tr>
+    <td><a  >closed</a></td>
+    <td>Returns a Boolean value indicating whether a window has been closed or not</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >close()</a></td>
+    <td>Closes the output stream previously opened with document.open()</td>
+    <td><a  >Document</a>, <a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >closest()</a></td>
+    <td>Searches up the DOM tree for the closest element which matches a specified CSS selector</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >clz32(x)</a></td>
+    <td>Returns the number of leading zeros in a 32-bit binary representation of x</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >code</a></td>
+    <td>Returns the code of the key that triggered the event</td>
+    <td><a  >KeyboardEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >colorDepth</a></td>
+    <td>Returns the bit depth of the color palette for displaying images</td>
+    <td><a  >Screen</a></td>
+  </tr>
+  <tr>
+  <td><a  >compareDocumentPosition()</a></td>
+  <td>Compares the document position of two elements</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >compile()</a></td>
+    <td><span class="deprecated">Deprecated in version 1.5.</span> Compiles a regular expression</td>
+    <td><a  >RegExp</a></td>
+  </tr>
+  <tr>
+    <td>composed</td>
+    <td>Returns whether the event is composed or not </td>
+    <td><a  >Event</a></td>
+  </tr>
+  <tr>
+    <td><a  >concat()</a></td>
+    <td>Joins two or more arrays, and returns a copy of the joined arrays</td>
+    <td><a  >Array</a>, <a  >String</a></td>
+  </tr>
+  <tr>
+    <td><a  >confirm()</a></td>
+    <td>Displays a dialog box with a message and an OK and a Cancel button</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+<td>const</td>
+<td>Declares a variable with a constant value</td>
+  <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+    <td><a  >constructor()</a></td>
+    <td>Creates and initialize objects created within a class</td>
+    <td><a  >Classes</a></td>
+  </tr>
+  <tr>
+    <td><a  >constructor</a></td>
+    <td>Returns the function that created the Array object's prototype</td>
+    <td><a  >Array</a>, <a  >Boolean</a>, <a  >Date</a>, <a  >Number</a>, <a  >RegExp</a></td>
+  </tr>
+  <tr>
+  <td><a  >contains()</a></td>
+  <td>Returns true if a node is a descendant of a node, otherwise false</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >contentEditable</a></td>
+  <td>Sets or returns whether the content of an element is editable or not</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+<td><a  >continue</a></td>
+<td>Breaks one iteration (in the loop) if a specified condition occurs, and 
+continues with the next iteration in the loop</td>
+  <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+    <td><a  >console</a></td>
+    <td>Returns a reference to the Console object, which provides methods for logging information to the browser's console (<a  >See Console object</a>)</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >cookie</a></td>
+    <td>Returns all name/value pairs of cookies in the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >cookieEnabled</a></td>
+    <td>Determines whether cookies are enabled in the browser</td>
+    <td><a  >Navigator</a></td>
+  </tr>
+  <tr>
+    <td><a  >coordinates</a></td>
+    <td>Returns the position and altitude of the device on Earth</td>
+    <td><a  >Geolocation</a></td>
+  </tr>
+  <tr>
+    <td><a  >copyWithin()</a></td>
+    <td>Copies array elements within the array, to and from specified positions</td>
+    <td><a  >Array</a></td>
+  </tr>
+  <tr>
+    <td><a  >cos(x)</a></td>
+    <td>Returns the cosine of x (x is in radians)</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >cosh(x)</a></td>
+    <td>Returns the hyperbolic cosine of x</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >count()</a></td>
+    <td>Logs the number of times that this particular call to count() has been 
+    called</td>
+    <td><a  >Console</a></td>
+    </tr>
+  <tr>
+  <td><a  >createAttribute()</a></td>
+  <td>Creates an attribute node</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+  <td><a  >createComment()</a></td>
+  <td>Creates a Comment node with the specified text</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+  <td><a  >createDocumentFragment()</a></td>
+  <td>Creates an empty DocumentFragment node</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+  <td><a  >createElement()</a></td>
+  <td>Creates an Element node</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+  <td><a  >createEvent()</a></td>
+  <td>Creates a new event</td>
+    <td><a  >Document</a>, <a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >createTextNode()</a></td>
+  <td>Creates a Text node</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >ctrlKey</a></td>
+    <td>Returns whether the &quot;CTRL&quot; key was pressed when the mouse event was triggered</td>
+    <td><a  >MouseEvent</a>, <a  >KeyboardEvent</a>, 
+    <a  >TouchEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >currentTarget</a></td>
+    <td>Returns the element whose event listeners triggered the event</td>
+    <td><a  >Event</a></td>
+  </tr>
+  <tr>
+    <td><a  >data</a></td>
+    <td>Returns the inserted characters</td>
+    <td><a  >InputEvent</a></td>
+  </tr>
+  <tr>
+    <td>dataTransfer</td>
+    <td>Returns an object containing the data being dragged/dropped, or 
+    inserted/deleted</td>
+    <td><a  >DragEvent</a>, <a  >InputEvent</a></td>
+  </tr>
+  <tr>
+<td><a  >debugger</a></td>
+<td>Stops the execution of JavaScript, and calls (if available) the debugging function</td>
+  <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+    <td><a  >decodeURI()</a></td>
+    <td>Decodes a URI</td>
+    <td><a  >Global</a></td>
+    </tr>
+  <tr>
+    <td><a  >decodeURIComponent()</a></td>
+    <td>Decodes a URI component</td>
+    <td><a  >Global</a></td>
+    </tr>
+  <tr>
+    <td><a  >defaultPrevented</a></td>
+    <td>Returns whether or not the preventDefault() method was called for  the event</td>
+    <td><a  >Event</a></td>
+  </tr>
+  <tr>
+    <td><a  >defaultStatus</a></td>
+    <td>Sets or returns the default text in the statusbar of a window</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+  <td><a  >defaultView</a></td>
+  <td>Returns the window object associated with a document, or null if none is available.</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td>delete</td>
+    <td>Deletes a property from an object</td>
+    <td><a  >Operators</a></td>
+  </tr>
+  <tr>
+    <td><a  >deltaX</a></td>
+    <td>Returns the horizontal scroll amount of a mouse wheel (x-axis)</td>
+    <td><a  >WheelEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >deltaY</a></td>
+    <td>Returns the vertical scroll amount of a mouse wheel (y-axis)</td>
+    <td><a  >WheelEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >deltaZ</a></td>
+    <td>Returns the scroll amount of a mouse wheel for the z-axis</td>
+    <td><a  >WheelEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >deltaMode</a></td>
+    <td>Returns a number that represents the unit of measurements for delta values (pixels, lines or pages)</td>
+    <td><a  >WheelEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >designMode</a></td>
+  <td>Controls whether the entire document should be editable or not.</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >detail</a></td>
+    <td>Returns a number that indicates how many times the mouse was clicked</td>
+    <td><a  >UiEvent</a></td>
+  </tr>
+  <tr>
+<td><a  >do ... while</a></td>
+<td>Executes a block of statements and repeats the block while a condition is 
+true</td>
+  <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+  <td><a  >doctype</a></td>
+  <td>Returns the Document Type Declaration associated with the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >document</a></td>
+    <td>Returns the Document object for the window (<a  >See Document object</a>)</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+  <td><a  >documentElement</a></td>
+  <td>Returns the Document Element of the document (the &lt;html&gt; element)</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >documentMode</a></td>
+    <td>Returns the mode used by the browser to render the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+  <td><a  >documentURI</a></td>
+  <td>Sets or returns the location of the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >domain</a></td>
+    <td>Returns the domain name of the server that loaded the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+  <td>domConfig</td>
+  <td><span class="deprecated">Obsolete.</span> Returns the DOM configuration of the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >elapsedTime</a></td>
+    <td>Returns the number of seconds an animation has been running</td>
+    <td><a  >AnimationEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >elapsedTime</a></td>
+    <td>Returns the number of seconds a transition has been running</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <td><a  >embeds</a></td>
+  <td>Returns a collection of all &lt;embed&gt; elements the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >encodeURI()</a></td>
+    <td>Encodes a URI</td>
+    <td><a  >Global</a></td>
+    </tr>
+  <tr>
+    <td><a  >encodeURIComponent()</a></td>
+    <td>Encodes a URI component</td>
+    <td><a  >Global</a></td>
+    </tr>
+  <tr>
+    <td><a  >E</a></td>
+    <td>Returns Euler's number (approx. 2.718)</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >endsWith()</a></td>
+    <td>Checks whether a string ends with specified string/characters</td>
+    <td><a  >String</a></td>
+  </tr>
+  <tr>
+    <td><a  >entries()</a></td>
+    <td>Returns a key/value pair Array Iteration Object</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td><a  >error()</a></td>
+    <td>Outputs an error message to the console</td>
+    <td><a  >Console</a></td>
+    </tr>
+  <tr>
+    <td><a  >escape()</a></td>
+    <td><span class="deprecated">Deprecated in version 1.5.</span> Use <a  >encodeURI()</a> or <a  >encodeURIComponent()</a> instead</td>
+    <td><a  >Global</a></td>
+    </tr>
+  <tr>
+    <td><a  >eval()</a></td>
+    <td>Evaluates a string and executes it as if it was script code</td>
+    <td><a  >Global</a></td>
+    </tr>
+  <tr>
+    <td><a  >eventPhase</a></td>
+    <td>Returns which phase of the event flow is currently being evaluated</td>
+    <td><a  >Event</a></td>
+  </tr>
+  <tr>
+    <td><a  >every()</a></td>
+    <td>Checks if every element in an array pass a test</td>
+    <td><a  >Array</a></td>
+    </tr>
+    <tr>
+    <td><a  >exec()</a></td>
+    <td>Tests for a match in a string. Returns the first match</td>
+    <td><a  >RegExp</a></td>
+  </tr>
+    <tr>
+  <td><a  >execCommand()</a></td>
+  <td>Invokes the specified clipboard operation on the element currently having focus.</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >exitFullscreen()</a></td>
+    <td>Cancels an element in fullscreen mode</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >exp(x)</a></td>
+    <td>Returns the value of E<sup>x</sup></td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >expm1(x)</a></td>
+    <td>Returns the value of E<sup>x</sup> minus 1</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td>export</td>
+    <td>Export functions so they can be used for imports in external modules, and other scripts</td>
+    <td></td>
+    </tr>
+  <tr>
+    <td><a  >extends</a></td>
+    <td>Extends a class (inherit)</td>
+    <td><a  >Classes</a></td>
+    </tr>
+  <tr>
+    <tr>
+    <td><a  >dir</a></td>
+    <td>Sets or returns the value of the dir attribute of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+    <tr>
+    <td><a  >fill()</a></td>
+    <td>Fill the elements in an array with a static value</td>
+    <td><a  >Array</a></td>
+    </tr>
+    <tr>
+    <td><a  >filter()</a></td>
+    <td>Creates a new array with every element in an array that pass a test</td>
+    <td><a  >Array</a></td>
+    </tr>
+    <tr>
+    <td><a  >find()</a></td>
+    <td>Returns the value of the first element in an array that pass a test</td>
+    <td><a  >Array</a></td>
+    </tr>
+    <tr>
+    <td><a  >findIndex()</a></td>
+    <td>Returns the index of the first element in an array that pass a test</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td><a  >floor()</a></td>
+    <td>Returns x, rounded downwards to the nearest integer</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+  <td><a  >focus()</a></td>
+  <td>Gives focus to an element</td>
+    <td><a  >Element</a>, <a  >Window</a></td>
+  </tr>
+  <tr>
+<td><a  >for</a></td>
+<td>Marks a block of statements to be executed as long as a condition is true</td>
+  <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+<td><a  >for ... in </a> </td>
+<td>Marks a block of statements to be executed for each element of an object (or 
+array)</td>
+  <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+    <td><a  >forEach()</a></td>
+    <td>Calls a function for each array element</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td><a  >forms</a></td>
+    <td>Returns a collection of all &lt;form&gt; elements in the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >forward()</a></td>
+    <td>Loads the next URL in the history list</td>
+    <td><a  >History</a></td>
+    </tr>
+  <tr>
+    <td><a  >frameElement</a></td>
+    <td>Returns the &lt;iframe&gt; element in which the current window is inserted</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >frames</a></td>
+    <td>Returns all &lt;iframe&gt; elements in the current window</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >from()</a></td>
+    <td>Creates an array from an object</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td><a  >fromCharCode()</a></td>
+    <td>Converts Unicode values to characters</td>
+    <td><a  >String</a></td>
+  </tr>
+  <tr>
+    <td><a  >fround()</a></td>
+    <td>Returns the nearest (32-bit single precision) float representation of a number</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >fullscreenElement</a></td>
+    <td>Returns the current element that is displayed in fullscreen mode</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >fullscreenEnabled()</a></td>
+    <td>Returns a Boolean value indicating whether the document can be viewed in fullscreen mode</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+<td><a  >function</a></td>
+<td>Declares a function</td>
+  <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+    <td><a  >geolocation</a></td>
+    <td>Returns a Geolocation object that can be used to locate the user's position</td>
+    <td><a  >Navigator</a></td>
+  </tr>
+  <tr>
+    <td><a  >getDate()</a></td>
+    <td>Returns the day of the month (from 1-31)</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >getDay()</a></td>
+    <td>Returns the day of the week (from 0-6)</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+  <td><a  >getAttribute()</a></td>
+  <td>Returns the specified attribute value of an element node</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >getAttributeNode()</a></td>
+  <td>Returns the specified attribute node</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >getBoundingClientRect()</a></td>
+  <td>Returns the size of an element and its position relative to the viewport</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >getComputedStyle()</a></td>
+    <td>Gets the current computed CSS styles applied to an element</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td>getCurrentPosition()</td>
+    <td>Returns the current position of the device</td>
+    <td><a  >Geolocation</a></td>
+    </tr>
+  <tr>
+  <td><a  >getElementById()</a></td>
+  <td>Returns the element that has the ID attribute with the specified value</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >getElementsByClassName()</a></td>
+    <td>Returns a NodeList containing all elements with the specified class name</td>
+    <td><a  >Document</a>, <a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >getElementsByName()</a></td>
+    <td>Returns a NodeList containing all elements with a specified name</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+  <td><a  >getElementsByTagName()</a></td>
+  <td>Returns a NodeList containing all elements with the specified tag name</td>
+    <td><a  >Document</a>, <a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >getFullYear()</a></td>
+    <td>Returns the year</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >getHours()</a></td>
+    <td>Returns the hour (from 0-23)</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >getItem()</a></td>
+    <td>Returns the value of the specified key name</td>
+    <td><a  >Storage</a></td>
+    </tr>
+  <tr>
+    <td><a  >getMilliseconds()</a></td>
+    <td>Returns the milliseconds (from 0-999)</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >getMinutes()</a></td>
+    <td>Returns the minutes (from 0-59)</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >getModifierState()</a></td>
+    <td>Returns an array containing target ranges that will be affected by the 
+    insertion/deletion</td>
+    <td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >getMonth()</a></td>
+    <td>Returns the month (from 0-11)</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+  <td><a  >getNamedItem()</a></td>
+  <td>Returns a specified attribute node from a NamedNodeMap</td>
+  <td><a  >Attribute</a></td>
+  </tr>
+  <tr>
+    <td><a  >getSeconds()</a></td>
+    <td>Returns the seconds (from 0-59)</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td>getSelection()</td>
+    <td>Returns a Selection object representing the range of text selected by the user</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td>getTargetRanges()</td>
+    <td>Returns an array containing target ranges that will be affected by the 
+    insertion/deletion</td>
+    <td><a  >InputEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >getTime()</a></td>
+    <td>Returns the number of milliseconds since midnight Jan 1 1970, and a specified date</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >getTimezoneOffset()</a></td>
+    <td>Returns the time difference between UTC time and local time, in minutes</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >getUTCDate()</a></td>
+    <td>Returns the day of the month, according to universal time (from 1-31)</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >getUTCDay()</a></td>
+    <td>Returns the day of the week, according to universal time (from 0-6)</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >getUTCFullYear()</a></td>
+    <td>Returns the year, according to universal time</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >getUTCHours()</a></td>
+    <td>Returns the hour, according to universal time (from 0-23)</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >getUTCMilliseconds()</a></td>
+    <td>Returns the milliseconds, according to universal time (from 0-999)</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >getUTCMinutes()</a></td>
+    <td>Returns the minutes, according to universal time (from 0-59)</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >getUTCMonth()</a></td>
+    <td>Returns the month, according to universal time (from 0-11)</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >getUTCSeconds()</a></td>
+    <td>Returns the seconds, according to universal time (from 0-59)</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td>getYear()</td>
+    <td><span class="deprecated">Deprecated.</span> Use the <a  >getFullYear()</a> method instead</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >global</a></td>
+    <td>Checks whether the &quot;g&quot; modifier is set</td>
+    <td><a  >RegExp</a></td>
+  </tr>
+  <tr>
+    <td><a  >go()</a></td>
+    <td>Loads a specific URL from the history list</td>
+    <td><a  >History</a></td>
+    </tr>
+  <tr>
+    <td><a  >group()</a></td>
+    <td>Creates a new inline group in the console. This indents following 
+    console messages by an additional level, until console.groupEnd() is called</td>
+    <td><a  >Console</a></td>
+    </tr>
+  <tr>
+    <td><a  >groupCollapsed()</a></td>
+    <td>Creates a new inline group in the console. However, the new group is 
+    created collapsed. The user will need to use the disclosure button to expand 
+    it</td>
+    <td><a  >Console</a></td>
+    </tr>
+  <tr>
+    <td><a  >groupEnd()</a></td>
+    <td>Exits the current inline group in the console</td>
+    <td><a  >Console</a></td>
+    </tr>
+  <tr>
+  <td><a  >hasAttribute()</a></td>
+  <td>Returns true if an element has the specified attribute, otherwise false</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >hasAttributes()</a></td>
+  <td>Returns true if an element has any attributes, otherwise false</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >hasChildNodes()</a></td>
+  <td>Returns true if an element has any child nodes, otherwise false</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >hasFocus()</a></td>
+    <td>Returns a Boolean value indicating whether the document has focus</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >hash</a></td>
+    <td>Sets or returns the anchor part (#) of a URL</td>
+    <td><a  >Location</a></td>
+  </tr>
+  <tr>
+    <td><a  >head</a></td>
+    <td>Returns the &lt;head&gt; element of the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >height</a></td>
+    <td>Returns the total height of the screen</td>
+    <td><a  >Screen</a></td>
+  </tr>
+  <tr>
+    <td><a  >history</a></td>
+    <td>Returns the History object for the window (<a  >See History object</a>)</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >host</a></td>
+    <td>Sets or returns the hostname and port number of a URL</td>
+    <td><a  >Location</a></td>
+  </tr>
+  <tr>
+    <td><a  >hostname</a></td>
+    <td>Sets or returns the hostname of a URL</td>
+    <td><a  >Location</a></td>
+  </tr>
+  <tr>
+    <td><a  >href</a></td>
+    <td>Sets or returns the entire URL</td>
+    <td><a  >Location</a></td>
+  </tr>
+  <tr>
+    <td><a  >id</a></td>
+    <td>Sets or returns the value of the id attribute of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+<td><a  >if ... else ... else if</a></td>
+<td>Marks a block of statements to be executed depending on a condition</td>
+  <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+    <td><a  >ignoreCase</a></td>
+    <td>Checks whether the &quot;i&quot; modifier is set</td>
+    <td><a  >RegExp</a></td>
+  </tr>
+  <tr>
+    <td><a  >images</a></td>
+    <td>Returns a collection of all &lt;img&gt; elements in the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+  <td><a  >implementation</a></td>
+  <td>Returns the DOMImplementation object that handles this document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td>import</td>
+    <td>Import functions exported from an external module, and another script</td>
+    <td></td>
+    </tr>
+  <tr>
+  <td><a  >importNode()</a></td>
+  <td>Imports a node from another document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td>in</td>
+    <td>Returns true if the specified property is in the specified object, otherwise false</td>
+    <td><a  >Operators</a></td>
+  </tr>
+  <tr>
+    <td><a  >includes()</a></td>
+    <td>Check if an array contains the specified element</td>
+    <td><a  >Array</a>, <a  >String</a></td>
+    </tr>
+    <tr>
+    <td><a  >indexOf()</a></td>
+    <td>Search the array for an element and returns its position</td>
+    <td><a  >Array</a>, <a  >String</a></td>
+    </tr>
+  <tr>
+    <td><a  >Infinity</a></td>
+    <td>A numeric value that represents positive/negative infinity</td>
+    <td><a  >Global</a></td>
+    </tr>
+  <tr>
+    <td><a  >info()</a></td>
+    <td>Outputs an informational message to the console</td>
+    <td><a  >Console</a></td>
+    </tr>
+  <tr>
+    <td><a  >innerHeight</a></td>
+    <td>Returns the height of the window's content area (viewport) including 
+    scrollbars</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >innerHTML</a></td>
+    <td>Sets or returns the content of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >innerText</a></td>
+    <td>Sets or returns the text content of a node and its descendants</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >innerWidth</a></td>
+    <td>Returns the width of a window's content area (viewport) including 
+    scrollbars</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+  <td><a  >inputEncoding</a></td>
+  <td>Returns the encoding, character set, used for the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >inputType</a></td>
+    <td>Returns the type of the change (i.e &quot;inserting&quot; or &quot;deleting&quot;)</td>
+    <td><a  >InputEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >insertAdjacentElement()</a></td>
+  <td>Inserts a HTML element at the specified position relative to the current element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >insertAdjacentHTML()</a></td>
+  <td>Inserts a HTML formatted text at the specified position relative to the current element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >insertAdjacentText()</a></td>
+  <td>Inserts text into the specified position relative to the current element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >insertBefore()</a></td>
+  <td>Inserts a new child node before a specified, existing, child node</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td>instanceof</td>
+    <td>Returns true if the specified object is an instance of the specified object</td>
+    <td><a  >Operators</a></td>
+  </tr>
+  <tr>
+    <td><a  >isArray()</a></td>
+    <td>Checks whether an object is an array</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td>isComposing</td>
+    <td>Returns whether the state of the event is composing or not</td>
+    <td><a  >InputEvent</a>, 
+    <a  >KeyboardEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >isContentEditable</a></td>
+  <td>Returns true if the content of an element is editable, otherwise false</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >isDefaultNamespace()</a></td>
+  <td>Returns true if a specified namespaceURI is the default, otherwise false</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >isEqualNode()</a></td>
+  <td>Checks if two elements are equal</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >isFinite()</a></td>
+    <td>Determines whether a value is a finite, legal number</td>
+    <td><a  >Global</a>, <a  >Number</a></td>
+    </tr>
+  <tr>
+  <td><a  >isId</a></td>
+  <td>Returns true if the attribute is of type Id, otherwise it returns false</td>
+  <td><a  >Attribute</a></td>
+  </tr>
+  <tr>
+    <td><a  >isInteger()</a></td>
+    <td>Checks whether a value is an integer</td>
+    <td><a  >Number</a></td>
+    </tr>
+  <tr>
+    <td><a  >isNaN()</a></td>
+    <td>Determines whether a value is an illegal number</td>
+    <td><a  >Global</a>, <a  >Number</a></td>
+    </tr>
+  <tr>
+    <td style="height: 23px"><a  >isSafeInteger()</a></td>
+    <td style="height: 23px">Checks whether a value is a safe integer</td>
+    <td style="height: 23px"><a  >Number</a></td>
+    </tr>
+  <tr>
+  <td><a  >isSameNode()</a></td>
+  <td>Checks if two elements are the same node</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >isSupported()</a></td>
+  <td>Returns true if a specified feature is supported on the element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >isTrusted</a></td>
+    <td>Returns whether or not an event is trusted</td>
+    <td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >item()</a></td>
+  <td>Returns the attribute node at a specified index in a NamedNodeMap</td>
+  <td><a  >Attribute</a>, <a  >HTMLCollection</a></td>
+  </tr>
+  <tr>
+    <td><a  >join()</a></td>
+    <td>Joins all elements of an array into a string</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td><a  >key</a></td>
+    <td>Returns the key value of the key represented by the event</td>
+    <td><a  >KeyboardEvent</a>, <a  >StorageEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >key()</a></td>
+    <td>Returns the name of the <em>n</em>th key in the storage</td>
+    <td><a  >Storage</a></td>
+    </tr>
+  <tr>
+    <td><a  >keyCode</a></td>
+    <td>Returns the Unicode character code of the key that triggered the onkeypress event, or the 
+Unicode key code of the key that triggered the onkeydown or 
+onkeyup event</td>
+    <td><a  >KeyboardEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >keys()</a></td>
+    <td>Returns a Array Iteration Object, containing the keys of the original array</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td><a  >lang</a></td>
+    <td>Sets or returns the value of the lang attribute of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >language</a></td>
+    <td>Returns the language of the browser</td>
+    <td><a  >Navigator</a></td>
+  </tr>
+  <tr>
+  <td><a  >lastChild</a></td>
+  <td>Returns the last child node of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >lastElementChild</a></td>
+  <td>Returns the last child element of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >lastIndex</a></td>
+    <td>Specifies the index at which to start the next match</td>
+    <td><a  >RegExp</a></td>
+  </tr>
+  <tr>
+    <td><a  >lastIndexOf()</a></td>
+    <td>Search the array for an element, starting at the end, and returns its position</td>
+    <td><a  >Array</a>, <a  >String</a></td>
+    </tr>
+  <tr>
+    <td><a  >lastModified</a></td>
+    <td>Returns the date and time the document was last modified</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >length</a></td>
+    <td>Sets or returns the number of elements in an array</td>
+    <td><a  >Array</a>, <a  >Attribute</a>, <a  >History</a>, <a  >HTMLCollection</a>, <a  >Window</a>, <a  >Storage</a></td>
+  </tr>
+    <tr>
+    <td>lengthComputable</td>
+    <td>Returns whether the length of the progress can be computable or not</td>
+    <td><a  >ProgressEvent</a></td>
+  </tr>
+    <tr>
+<td>let</td>
+<td>Declares a variable inside brackets {} scope</td>
+  <td><a  >Statements</a></td>
+  </tr>
+    <tr>
+    <td><a  >links</a></td>
+    <td>Returns a collection of all &lt;a&gt; and &lt;area&gt; elements in the document that have a href attribute</td>
+    <td><a  >Document</a></td>
+  </tr>
+    <tr>
+    <td><a  >LN2</a></td>
+    <td>Returns the natural logarithm of 2 (approx. 0.693)</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >LN10</a></td>
+    <td>Returns the natural logarithm of 10 (approx. 2.302)</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td>loaded</td>
+    <td>Returns how much work has been loaded</td>
+    <td><a  >ProgressEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >localeCompare()</a></td>
+    <td>Compares two strings in the current locale</td>
+    <td><a  >String</a></td>
+  </tr>
+  <tr>
+    <td><a  >localStorage</a></td>
+    <td>Allows to save key/value pairs in a web browser. Stores the data with no expiration date</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >location</a></td>
+    <td>Returns the location of a key on the keyboard or device</td>
+    <td><a  >KeyboardEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >location</a></td>
+    <td>Returns the Location object for the window (<a  >See Location object</a>)</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >log()</a></td>
+    <td>Returns the natural logarithm of a number</td>
+    <td><a  >Math</a>, <a  >Console</a></td>
+  </tr>
+  <tr>
+    <td><a  >log10()</a></td>
+    <td>Returns the base-10 logarithm of a number</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >log1p()</a></td>
+    <td>Returns the natural logarithm of 1 + a number</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >log2()</a></td>
+    <td>Returns the base-2 logarithm of a number</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >LOG2E</a></td>
+    <td>Returns the base-2 logarithm of E (approx. 1.442)</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >LOG10E</a></td>
+    <td>Returns the base-10 logarithm of E (approx. 0.434)</td>
+    <td><a  >Math</a></td>
+  </tr>
+    <tr>
+    <td><a  >map()</a></td>
+    <td>Creates a new array with the result of calling a function for each array element</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td><a  >match()</a></td>
+    <td>Searches a string for a match against a regular expression, and returns the matches</td>
+    <td><a  >String</a></td>
+  </tr>
+  <tr>
+    <td><a  >matches()</a></td>
+    <td>Returns a Boolean value indicating whether an element is matched by a specific CSS selector or not</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >matchMedia()</a></td>
+    <td>Returns a MediaQueryList object representing the specified CSS media query string</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >max()</a></td>
+    <td>Returns the number with the highest value</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >MAX_VALUE</a></td>
+    <td>Returns the largest number possible in JavaScript</td>
+    <td><a  >Number</a></td>
+  </tr>
+  <tr>
+    <td><a  >message</a></td>
+    <td>Sets or returns an error message (a string)</td>
+    <td><a  >Error</a></td>
+  </tr>
+  <tr>
+    <td><a  >metaKey</a></td>
+    <td>Returns whether the &quot;META&quot; key was pressed when an event was triggered</td>
+    <td><a  >MouseEvent</a>, <a  >KeyboardEvent</a>, 
+    <a  >TouchEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >min()</a></td>
+    <td>Returns the number with the lowest value</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >multiline</a></td>
+    <td>Checks whether the &quot;m&quot; modifier is set</td>
+    <td><a  >RegExp</a></td>
+  </tr>
+  <tr>
+    <td><a  >MIN_VALUE</a></td>
+    <td>Returns the smallest number possible in JavaScript</td>
+    <td><a  >Number</a></td>
+  </tr>
+  <tr>
+    <td><a  >moveBy()</a></td>
+    <td>Moves a window relative to its current position</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >moveTo()</a></td>
+    <td>Moves a window to the specified position</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+<td>MovementX</td>
+<td>Returns the horizontal coordinate of the mouse pointer relative to the 
+position of the last mousemove event</td>
+<td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+<td>MovementY</td>
+<td>Returns the vertical coordinate of the mouse pointer relative to the 
+position of the last mousemove event</td>
+<td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >name</a></td>
+    <td>Sets or returns an error name</td>
+    <td><a  >Error</a>, <a  >Attribute</a>, <a  >Window</a></td>
+  </tr>
+  <tr>
+  <td><a  >namedItem()</a></td>
+  <td>Returns the element with the specified ID, or name, in an HTMLCollection</td>
+  <td><a  >HTMLCollection</a></td>
+  </tr>
+  <tr>
+  <td><a  >namespaceURI</a></td>
+  <td>Returns the namespace URI of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >NaN</a></td>
+    <td>&quot;Not-a-Number&quot; value</td>
+    <td><a  >Global</a>, <a  >Number</a></td>
+    </tr>
+  <tr>
+    <td><a  >navigator</a></td>
+    <td>Returns the Navigator object for the window (<a  >See Navigator object</a>)</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >NEGATIVE_INFINITY</a></td>
+    <td>Represents negative infinity (returned on overflow)</td>
+    <td><a  >Number</a></td>
+    </tr>
+  <tr>
+    <td>new</td>
+    <td>Creates an instance of a constructor</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a  >newURL</a></td>
+    <td>Returns the URL of the document, after the hash has been changed</td>
+    <td><a  >HasChangeEvent</a></td>
+  </tr>
+  <tr>
+    <td>newValue</td>
+    <td>Returns the new value of the changed storage item</td>
+    <td><a  >StorageEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >nextSibling</a></td>
+  <td>Returns the next node at the same node tree level</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >nextElementSibling</a></td>
+  <td>Returns the next element at the same node tree level</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >nodeName</a></td>
+  <td>Returns the name of a node</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >nodeType</a></td>
+  <td>Returns the node type of a node</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >nodeValue</a></td>
+  <td>Sets or returns the value of a node</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >normalize()</a></td>
+  <td>Removes empty Text nodes, and joins adjacent nodes</td>
+    <td><a  >Document</a>, <a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >normalizeDocument()</a></td>
+  <td>Removes empty Text nodes, and joins adjacent nodes</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >now()</a></td>
+    <td>Returns the number of milliseconds since midnight Jan 1, 1970</td>
+    <td><a  >Date</a></td>
+    </tr>
+  <tr>
+    <td><a  >Number()</a></td>
+    <td>Converts an object's value to a number</td>
+    <td><a  >Global</a></td>
+    </tr>
+  <tr>
+    <td><a  >offsetHeight</a></td>
+    <td>Returns the height of an element, including padding, border and scrollbar</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >offsetWidth</a></td>
+    <td>Returns the width of an element, including padding, border and scrollbar</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >offsetLeft</a></td>
+    <td>Returns the horizontal offset position of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >offsetParent</a></td>
+    <td>Returns the offset container of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >offsetTop</a></td>
+    <td>Returns the vertical offset position of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+<td>offsetX</td>
+<td>Returns the horizontal coordinate of the mouse pointer relative to the 
+position of the edge of the target element</td>
+<td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+<td>offsetY</td>
+<td>Returns the vertical coordinate of the mouse pointer relative to the 
+position of the edge of the target element</td>
+<td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >oldURL</a></td>
+    <td>Returns the URL of the document, before the hash was changed</td>
+    <td><a  >HasChangeEvent</a></td>
+  </tr>
+  <tr>
+    <td>oldValue</td>
+    <td>Returns the old value of the changed storage item</td>
+    <td><a  >StorageEvent</a></td>
+  </tr>
+  <tr>
+<td><a  >onabort</a></td>
+<td>The event occurs when the loading of a media is aborted</td>
+<td><a  >UiEvent</a>, <a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onafterprint</a></td>
+  <td>The event occurs when a page has started printing, or if the print dialogue box has been closed</td>
+  <td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onanimationend</a></td>
+  <td>The event occurs when a CSS animation has completed</td>
+  <td><a  >AnimationEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onanimationiteration</a></td>
+  <td>The event occurs when a CSS animation is repeated</td>
+  <td><a  >AnimationEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onanimationstart</a></td>
+  <td>The event occurs when a CSS animation has started</td>
+  <td><a  >AnimationEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onbeforeprint</a></td>
+  <td>The event occurs when a page is about to be printed</td>
+  <td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onbeforeunload</a></td>
+  <td>The event occurs before the document is about to be unloaded</td>
+  <td><a  >UiEvent</a>, 
+  <a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onblur</a></td>
+  <td>The event occurs when an element loses focus</td>
+  <td><a  >FocusEvent</a></td>
+  </tr>
+  <tr>
+<td><a  >oncanplay</a></td>
+<td>The event occurs when the browser can start playing the media (when it has buffered 
+enough to begin)</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+<td><a  >oncanplaythrough</a></td>
+<td>The event occurs when the browser can play through the media without 
+stopping for buffering</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onchange</a></td>
+  <td>The event occurs when the content of a form element, the selection, or the checked state have changed (for &lt;input&gt;, &lt;select&gt;, and &lt;textarea&gt;)</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onclick</a></td>
+  <td>The event occurs when the user clicks on an element</td>
+  <td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >oncontextmenu</a></td>
+  <td>The event occurs when the user right-clicks on an element to open a context menu</td>
+  <td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >oncopy</a></td>
+  <td>The event occurs when the user copies the content of an element</td>
+  <td><a  >ClipboardEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >oncut</a></td>
+  <td>The event occurs when the user cuts the content of an element</td>
+  <td><a  >ClipboardEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >ondblclick</a></td>
+  <td>The event occurs when the user double-clicks on an element</td>
+  <td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >ondrag</a></td>
+  <td>The event occurs when an element is being dragged</td>
+  <td><a  >DragEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >ondragend</a></td>
+  <td>The event occurs when the user has finished dragging an element</td>
+  <td><a  >DragEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >ondragenter</a></td>
+  <td>The event occurs when the dragged element enters the drop target</td>
+  <td><a  >DragEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >ondragleave</a></td>
+  <td>The event occurs when the dragged element leaves the drop target</td>
+  <td><a  >DragEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >ondragover</a></td>
+  <td>The event occurs when the dragged element is over the drop target</td>
+  <td><a  >DragEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >ondragstart</a></td>
+  <td>The event occurs when the user starts to drag an element</td>
+  <td><a  >DragEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >ondrop</a></td>
+  <td>The event occurs when the dragged element is dropped on the drop target</td>
+  <td><a  >DragEvent</a></td>
+  </tr>
+  <tr>
+<td><a  >ondurationchange</a></td>
+<td>The event occurs when the duration of the media is changed</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+<td>onemptied</td>
+<td>The event occurs when something bad happens and the media file is suddenly 
+unavailable (like unexpectedly disconnects)</td>
+<td>&nbsp;</td>
+  </tr>
+  <tr>
+<td><a  >onended</a></td>
+<td>The event occurs when the media has reach the end (useful for messages like &quot;thanks for listening&quot;)</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onerror</a></td>
+  <td>The event occurs when an error occurs while loading an external file </td>
+  <td><a  >ProgressEvent</a>, 
+  <a  >UiEvent</a>, <a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onfocus</a></td>
+  <td>The event occurs when an element gets focus</td>
+  <td><a  >FocusEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onfocusin</a></td>
+  <td>The event occurs when an element is about to get focus</td>
+  <td><a  >FocusEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onfocusout</a></td>
+  <td>The event occurs when an element is about to lose focus</td>
+  <td><a  >FocusEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onfullscreenchange</a></td>
+  <td>The event occurs when an element is displayed in fullscreen mode</td>
+  <td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onfullscreenerror</a></td>
+  <td>The event occurs when an element can not be displayed in fullscreen mode</td>
+  <td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onhashchange</a></td>
+  <td>The event occurs when there has been changes to the anchor part of a URL</td>
+  <td><a  >HashChangeEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >oninput</a></td>
+  <td>The event occurs when an element gets user input</td>
+  <td><a  >InputEvent</a>, 
+  <a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >oninvalid</a></td>
+  <td>The event occurs when an element is invalid</td>
+  <td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onkeydown</a></td>
+  <td>The event occurs when the user is pressing a key</td>
+  <td><a  >KeyboardEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onkeypress</a></td>
+  <td>The event occurs when the user presses a key</td>
+  <td><a  >KeyboardEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onkeyup</a></td>
+  <td>The event occurs when the user releases a key</td>
+  <td><a  >KeyboardEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >onLine</a></td>
+    <td>Determines whether the browser is online</td>
+    <td><a  >Navigator</a></td>
+  </tr>
+  <tr>
+  <td><a  >onload</a></td>
+  <td>The event occurs when an object has loaded</td>
+  <td><a  >UiEvent</a>, 
+  <a  >Event</a></td>
+  </tr>
+  <tr>
+<td><a  >onloadeddata</a></td>
+<td>The event occurs when media data is loaded</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+<td><a  >onloadedmetadata</a></td>
+<td>The event occurs when meta data (like dimensions and duration) are loaded</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+<td><a  >onloadstart</a></td>
+<td>The event occurs when the browser starts looking for the specified media</td>
+<td><a  >ProgressEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onmessage</a></td>
+  <td>The event occurs when a message is received through the event source</td>
+  <td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onmousedown</a></td>
+  <td>The event occurs when the user presses a mouse button over an element</td>
+  <td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onmouseenter</a></td>
+  <td>The event occurs when the pointer is moved onto an element</td>
+  <td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onmouseleave</a></td>
+  <td>The event occurs when the pointer is moved out of an element</td>
+  <td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onmousemove</a></td>
+  <td>The event occurs when the pointer is moving while it is over an element</td>
+  <td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onmouseover</a></td>
+  <td>The event occurs when the pointer is moved onto an element, or onto one of its children</td>
+  <td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onmouseout</a></td>
+  <td>The event occurs when a user moves the mouse pointer out of an element, or out of one of its children</td>
+  <td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onmouseup</a></td>
+  <td>The event occurs when a user releases a mouse button over an element</td>
+  <td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+  <td>onmousewheel</td>
+  <td><span class="deprecated">Deprecated.</span> Use the 
+  <a  >wheel</a> event instead</td>
+  <td><a  >WheelEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onoffline</a></td>
+  <td>The event occurs when the browser starts to work offline</td>
+  <td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >ononline</a></td>
+  <td>The event occurs when the browser starts to work online</td>
+  <td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onopen</a></td>
+  <td>The event occurs when a connection with the event source is opened</td>
+  <td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onpagehide</a></td>
+  <td>The event occurs when the user navigates away from a webpage</td>
+  <td><a  >PageTransitionEvent</a></td>
+  </tr>
+  <tr>
+  <td style="height: 23px"><a  >onpageshow</a></td>
+  <td style="height: 23px">The event occurs when the user navigates to a webpage</td>
+  <td style="width: 156px; height: 23px"><a  >PageTransitionEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onpaste</a></td>
+  <td>The event occurs when the user pastes some content in an element</td>
+  <td><a  >ClipboardEvent</a></td>
+  </tr>
+  <tr>
+<td><a  >onpause</a></td>
+<td>The event occurs when the media is paused either by the user or 
+programmatically</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+<td><a  >onplay</a></td>
+<td>The event occurs when the media has been started or is no longer paused</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+<td><a  >onplaying</a></td>
+<td>The event occurs when the media is playing after having been paused or stopped for buffering</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td>onpopstate</td>
+  <td>The event occurs when the window's history changes</td>
+  <td><a  >PopStateEvent</a></td>
+  </tr>
+  <tr>
+<td><a  >onprogress</a></td>
+<td>The event occurs when the browser is in the process of getting the media 
+data (downloading the media)</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+<td><a  >onratechange</a></td>
+<td>The event occurs when the playing speed of the media is changed</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onresize</a></td>
+  <td>The event occurs when the document view is resized</td>
+  <td><a  >UiEvent</a>, 
+  <a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onreset</a></td>
+  <td>The event occurs when a form is reset</td>
+  <td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onscroll</a></td>
+  <td>The event occurs when an element's scrollbar is being scrolled</td>
+  <td><a  >UiEvent</a>, 
+  <a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onsearch</a></td>
+  <td>The event occurs when the user writes something in a search field (for &lt;input=&quot;search&quot;&gt;)</td>
+  <td><a  >Event</a></td>
+  </tr>
+  <tr>
+<td><a  >onseeked</a></td>
+<td>The event occurs when the user is finished moving/skipping to a new position 
+in the media</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+<td><a  >onseeking</a></td>
+<td>The event occurs when the user starts moving/skipping to a new position in 
+the media</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onselect</a></td>
+  <td>The event occurs after the user selects some&nbsp;text (for &lt;input&gt; and &lt;textarea&gt;)</td>
+  <td><a  >UiEvent</a>, 
+  <a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onshow</a></td>
+  <td>The event occurs when a &lt;menu&gt; element is shown as a context menu</td>
+  <td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onstalled</a></td>
+  <td>The event occurs when the browser is trying to get media data, but data is not available</td>
+  <td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td>onstorage</td>
+  <td>The event occurs when a Web Storage area is updated</td>
+  <td><a  >StorageEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onsubmit</a></td>
+  <td>The event occurs when a form is submitted</td>
+  <td><a  >Event</a></td>
+  </tr>
+  <tr>
+<td><a  >onsuspend</a></td>
+<td>The event occurs when the browser is intentionally not getting media data</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+<td><a  >ontimeupdate</a></td>
+<td>The event occurs when the playing position has changed (like when the user 
+fast forwards to a different point in the media)</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >ontoggle</a></td>
+  <td>The event occurs when the user opens or closes the &lt;details&gt; element</td>
+  <td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >ontouchcancel</a></td>
+  <td>The event occurs when the touch is interrupted</td>
+  <td><a  >TouchEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >ontouchend</a></td>
+  <td>The event occurs when a finger is removed from a touch screen</td>
+  <td><a  >TouchEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >ontouchmove</a></td>
+  <td>The event occurs when a finger is dragged across the screen</td>
+  <td><a  >TouchEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >ontouchstart</a></td>
+  <td>The event occurs when a finger is placed on a touch screen</td>
+  <td><a  >TouchEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >ontransitionend</a></td>
+  <td>The event occurs when a CSS transition has completed</td>
+  <td><a  >TransitionEvent</a></td>
+  </tr>
+  <tr>
+  <td><a  >onunload</a></td>
+  <td>The event occurs once a page has unloaded (for &lt;body&gt;)</td>
+  <td><a  >UiEvent</a>, 
+  <a  >Event</a></td>
+  </tr>
+  <tr>
+<td><a  >onvolumechange</a></td>
+<td>The event occurs when the volume of the media has changed (includes setting the 
+volume to &quot;mute&quot;)</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+<td><a  >onwaiting</a></td>
+<td>The event occurs when the media has paused but is expected to resume (like 
+when the media pauses to buffer more data)</td>
+<td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >onwheel</a></td>
+  <td>The event occurs when the mouse wheel rolls up or down over an element</td>
+  <td><a  >WheelEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >open()</a></td>
+    <td>Opens an HTML output stream to collect output from document.write()</td>
+    <td><a  >Document</a>, <a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >opener</a></td>
+    <td>Returns a reference to the window that created the window</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >origin</a></td>
+    <td>Returns the protocol, hostname and port number of a URL</td>
+    <td><a  >Location</a></td>
+  </tr>
+  <tr>
+    <td><a  >outerHeight</a></td>
+    <td>Returns the height of the browser window, including toolbars/scrollbars</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >outerHTML</a></td>
+    <td>Sets or returns the outer content of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >outerText</a></td>
+    <td>Sets or returns the text outer content of a node and its descendants</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >outerWidth</a></td>
+    <td>Returns the width of the browser window, including toolbars/scrollbars</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+  <td><a  >ownerDocument</a></td>
+  <td>Returns the root element (document object) for an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >pageX</a></td>
+    <td>Returns the horizontal coordinate of the mouse pointer, relative to the document, when  the mouse event was triggered</td>
+    <td><a  >MouseEvent</a></td>
+    </tr>
+  <tr>
+    <td><a  >pageXOffset</a></td>
+    <td>Returns the pixels the current document has been scrolled (horizontally) from the upper left corner of the window</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >pageY</a></td>
+    <td>Returns the vertical coordinate of the mouse pointer, relative to the document, when  the mouse event was triggered</td>
+    <td><a  >MouseEvent</a></td>
+    </tr>
+  <tr>
+    <td><a  >pageYOffset</a></td>
+    <td>Returns the pixels the current document has been scrolled (vertically) from the upper left corner of the window</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >parent</a></td>
+    <td>Returns the parent window of the current window</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+  <td><a  >parentNode</a></td>
+  <td>Returns the parent node of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >parentElement</a></td>
+  <td>Returns the parent element node of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >parse()</a></td>
+    <td>Parses a date string and returns the number of milliseconds since January 1, 1970</td>
+    <td><a  >Date</a>, <a  >JSON</a></td>
+  </tr>
+  <tr>
+    <td><a  >parseFloat()</a></td>
+    <td>Parses a string and returns a floating point number</td>
+    <td><a  >Global</a></td>
+    </tr>
+  <tr>
+    <td><a  >parseInt()</a></td>
+    <td>Parses a string and returns an integer</td>
+    <td><a  >Global</a></td>
+    </tr>
+  <tr>
+    <td><a  >pathname</a></td>
+    <td>Sets or returns the path name of a URL</td>
+    <td><a  >Location</a></td>
+  </tr>
+  <tr>
+    <td><a  >persisted</a></td>
+    <td>Returns whether the webpage was cached by the browser</td>
+    <td><a  >PageTransitionEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >PI</a></td>
+    <td>Returns PI (approx. 3.14)</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >pixelDepth</a></td>
+    <td>Returns the color resolution (in bits per pixel) of the screen</td>
+    <td><a  >Screen</a></td>
+  </tr>
+  <tr>
+    <td><a  >platform</a></td>
+    <td>Returns for which platform the browser is compiled</td>
+    <td><a  >Navigator</a></td>
+  </tr>
+  <tr>
+    <td><a  >pop()</a></td>
+    <td>Removes the last element of an array, and returns that element</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td><a  >port</a></td>
+    <td>Sets or returns the port number of a URL</td>
+    <td><a  >Location</a></td>
+  </tr>
+  <tr>
+    <td><a  >position</a></td>
+    <td>Returns the position of the concerned device at a given time</td>
+    <td><a  >Geolocation</a></td>
+  </tr>
+  <tr>
+    <td>positionError</td>
+    <td>Returns the reason of an error occurring when using the geolocating 
+    device</td>
+    <td><a  >Geolocation</a></td>
+  </tr>
+  <tr>
+    <td>positionOptions</td>
+    <td>Describes an object containing option properties to pass as a parameter 
+    of Geolocation.getCurrentPosition() and Geolocation.watchPosition()</td>
+    <td><a  >Geolocation</a></td>
+  </tr>
+  <tr>
+    <td><a  >POSITIVE_INFINITY</a></td>
+    <td>Represents infinity (returned on overflow)</td>
+    <td><a  >Number</a></td>
+  </tr>
+  <tr>
+    <td><a  >preventDefault()</a></td>
+    <td>Cancels the event if it is cancelable, meaning that the default  action that belongs to the event will not occur</td>
+    <td><a  >Event</a></td>
+  </tr>
+  <tr>
+    <td><a  >print()</a></td>
+    <td>Prints the content of the current window</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >product</a></td>
+    <td>Returns the engine name of the browser</td>
+    <td><a  >Navigator</a></td>
+  </tr>
+  <tr>
+    <td><a  >propertyName</a></td>
+    <td>Returns the name of the CSS property associated with the animation or transition</td>
+    <td><a  >AnimationEvent</a>,
+    <a  >TransitionEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >protocol</a></td>
+    <td>Sets or returns the protocol of a URL</td>
+    <td><a  >Location</a></td>
+  </tr>
+  <tr>
+    <td><a  >prototype</a></td>
+    <td>Allows you to add properties and methods to an Array object</td>
+    <td><a  >Array</a>, <a  >Boolean</a>, <a  >Date</a></td>
+  </tr>
+  <tr>
+    <td>pseudoElement</td>
+    <td>Returns the name of the pseudo-element of the animation or transition</td>
+    <td><a  >AnimationEvent</a>,
+    <a  >TransitionEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >push()</a></td>
+    <td>Adds new elements to the end of an array, and returns the new length</td>
+    <td><a  >Array</a></td>
+    </tr>
+    <tr>
+    <td><a  >querySelector()</a></td>
+    <td>Returns the first element that matches a specified CSS selector(s) in the document</td>
+    <td><a  >Document</a>, <a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >querySelectorAll()</a></td>
+    <td>Returns a static NodeList containing all elements that matches a specified CSS selector(s) in the document</td>
+    <td><a  >Document</a>, <a  >Element</a></td>
+  </tr>
+    <tr>
+    <td><a  >random()</a></td>
+    <td>Returns a random number between 0 and 1</td>
+    <td><a  >Math</a></td>
+  </tr>
+    <tr>
+    <td><a  >readyState</a></td>
+    <td>Returns the (loading) status of the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+    <tr>
+    <td><a  >reduce()</a></td>
+    <td>Reduce the values of an array to a single value (going left-to-right)</td>
+    <td><a  >Array</a></td>
+    </tr>
+    <tr>
+    <td><a  >reduceRight()</a></td>
+    <td>Reduce the values of an array to a single value (going right-to-left)</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td><a  >referrer</a></td>
+    <td>Returns the URL of the document that loaded the current document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td>region</td>
+    <td></td>
+    <td><a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >reload()</a></td>
+    <td>Reloads the current document</td>
+    <td><a  >Location</a></td>
+    </tr>
+  <tr>
+  <td><a  >remove()</a></td>
+  <td>Removes the element from the DOM</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >removeAttribute()</a></td>
+  <td>Removes a specified attribute from an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >removeAttributeNode()</a></td>
+  <td>Removes a specified attribute node, and returns the removed node</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >removeChild()</a></td>
+  <td>Removes a child node from an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >removeEventListener()</a></td>
+  <td>Removes an event handler that has been attached with the addEventListener() method</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >removeItem()</a></td>
+    <td>Removes that key from the storage</td>
+    <td><a  >Storage</a></td>
+    </tr>
+  <tr>
+    <td>repeat</td>
+    <td>Returns whether a key is being hold down repeatedly, or not</td>
+    <td><a  >KeyboardEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >repeat()</a></td>
+    <td>Returns a new string with a specified number of copies of an existing string</td>
+    <td><a  >String</a></td>
+    </tr>
+  <tr>
+    <td><a  >replace()</a></td>
+    <td>Searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced</td>
+    <td><a  >String</a>, <a  >Location</a></td>
+  </tr>
+  <tr>
+  <td><a  >replaceChild()</a></td>
+  <td>Replaces a child node in an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td>requestAnimationFrame()</td>
+    <td>Requests the browser to call a function to update an animation before 
+    the next repaint</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >requestFullscreen()</a></td>
+    <td>Shows an element in fullscreen mode</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >resizeBy()</a></td>
+    <td>Resizes the window by the specified pixels</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >resizeTo()</a></td>
+    <td>Resizes the window to the specified width and height</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+<td><a  >return</a></td>
+<td>Stops the execution of a function and returns a value from that function</td>
+  <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+    <td><a  >reverse()</a></td>
+    <td>Reverses the order of the elements in an array</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td><a  >round()</a></td>
+    <td>Rounds x to the nearest integer</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >pow()</a></td>
+    <td>Returns the value of x to the power of y</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+  <td><a  >previousSibling</a></td>
+  <td>Returns the previous node at the same node tree level</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >previousElementSibling</a></td>
+  <td>Returns the previous element at the same node tree level</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >prompt()</a></td>
+    <td>Displays a dialog box that prompts the visitor for input</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >prototype</a></td>
+    <td>Allows you to add properties and methods to an object</td>
+    <td><a  >Number</a></td>
+  </tr>
+  <tr>
+    <td><a  >relatedTarget</a></td>
+    <td>Returns the element related to the element that triggered the mouse event</td>
+    <td><a  >MouseEvent</a>, <a  >FocusEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >removeEventListener()</a></td>
+    <td>Removes an event handler from the document (that has been attached with the <a  >addEventListener()</a> method)</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+  <td><a  >removeNamedItem()</a></td>
+  <td>Removes a specified attribute node</td>
+  <td><a  >Attribute</a></td>
+  </tr>
+  <tr>
+  <td><a  >renameNode()</a></td>
+  <td>Renames the specified node</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >screen</a></td>
+    <td>Returns the Screen object for the window <a  >(See Screen object)</a></td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >screenLeft</a></td>
+    <td>Returns the horizontal coordinate of the window relative to the screen</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >screenTop</a></td>
+    <td>Returns the vertical coordinate of the window relative to the screen</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >screenX</a></td>
+    <td>Returns the horizontal coordinate of the window/mouse pointer relative to the screen</td>
+    <td><a  >Window</a>, <a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >screenY</a></td>
+    <td>Returns the vertical coordinate of the window/mouse pointer relative to the screen</td>
+    <td><a  >Window</a>, <a  >MouseEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >scripts</a></td>
+    <td>Returns a collection of &lt;script&gt; elements in the document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td>scroll()</td>
+    <td><span class="deprecated">Deprecated.</span> This method has been replaced by the <a  >scrollTo()</a> method.</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >scrollBy()</a></td>
+    <td>Scrolls the document by the specified number of pixels</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >scrollHeight</a></td>
+    <td>Returns the entire height of an element, including padding</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >scrollIntoView()</a></td>
+    <td>Scrolls the specified element into the visible area of the browser window</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >scrollLeft</a></td>
+    <td>Sets or returns the number of pixels an element's content is scrolled horizontally</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >scrollTo()</a></td>
+    <td>Scrolls the document to the specified coordinates</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >scrollTop</a></td>
+    <td>Sets or returns the number of pixels an element's content is scrolled vertically</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >scrollWidth</a></td>
+    <td>Returns the entire width of an element, including padding</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td>scrollX</td>
+    <td>An alias of <a  >pageXOffset</a></td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td>scrollY</td>
+    <td>An alias of <a  >pageYOffset</a></td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >search</a></td>
+    <td>Sets or returns the querystring part of a URL</td>
+    <td><a  >Location</a></td>
+  </tr>
+  <tr>
+    <td><a  >search()</a></td>
+    <td>Searches a string for a specified value, or regular expression, and returns the position of the match</td>
+    <td><a  >String</a></td>
+  </tr>
+  <tr>
+    <td><a  >self</a></td>
+    <td>Returns the current window</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >sessionStorage</a></td>
+    <td>Allows to save key/value pairs in a web browser. Stores the data for one 
+    session</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >setAttribute()</a></td>
+  <td>Sets or changes the specified attribute, to the specified value</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >setAttributeNode()</a></td>
+  <td>Sets or changes the specified attribute node</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >setDate()</a></td>
+    <td>Sets the day of the month of a date object</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >setFullYear()</a></td>
+    <td>Sets the year of a date object</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >setHours()</a></td>
+    <td>Sets the hour of a date object</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >setInterval()</a></td>
+    <td>Calls a function or evaluates an expression at specified intervals (in milliseconds)</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >setItem()</a></td>
+    <td>Adds that key to the storage, or update that key's value if it already 
+    exists</td>
+    <td><a  >Storage</a></td>
+    </tr>
+  <tr>
+    <td><a  >setMilliseconds()</a></td>
+    <td>Sets the milliseconds of a date object</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >setMinutes()</a></td>
+    <td>Set the minutes of a date object</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >setMonth()</a></td>
+    <td>Sets the month of a date object</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+  <td><a  >setNamedItem()</a></td>
+  <td>Sets the specified attribute node (by name)</td>
+  <td><a  >Attribute</a></td>
+  </tr>
+  <tr>
+    <td><a  >setSeconds()</a></td>
+    <td>Sets the seconds of a date object</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >setTime()</a></td>
+    <td>Sets a date to a specified number of milliseconds after/before January 1, 1970</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >setTimeout()</a></td>
+    <td>Calls a function or evaluates an expression after a specified number of milliseconds</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >setUTCDate()</a></td>
+    <td>Sets the day of the month of a date object, according to universal time</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >setUTCFullYear()</a></td>
+    <td>Sets the year of a date object, according to universal time</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >setUTCHours()</a></td>
+    <td>Sets the hour of a date object, according to universal time</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >setUTCMilliseconds()</a></td>
+    <td>Sets the milliseconds of a date object, according to universal time</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >setUTCMinutes()</a></td>
+    <td>Set the minutes of a date object, according to universal time</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >setUTCMonth()</a></td>
+    <td>Sets the month of a date object, according to universal time</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >setUTCSeconds()</a></td>
+    <td>Set the seconds of a date object, according to universal time</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td>setYear()</td>
+    <td><span class="deprecated">Deprecated.</span> Use the <a  >setFullYear()</a> method instead</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >shift()</a></td>
+    <td>Removes the first element of an array, and returns that element</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td><a  >shiftKey</a></td>
+    <td>Returns whether the &quot;SHIFT&quot; key was pressed when an event was triggered</td>
+    <td><a  >MouseEvent</a>, <a  >KeyboardEvent</a>, 
+    <a  >TouchEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >sign(x)</a></td>
+    <td>Returns the sign of a number (checks whether it is positive, negative or zero)</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >sin()</a></td>
+    <td>Returns the sine of x (x is in radians)</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >sinh()</a></td>
+    <td>Returns the hyperbolic sine of x</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >slice()</a></td>
+    <td>Selects a part of an array, and returns the new array</td>
+    <td><a  >Array</a>, <a  >String</a></td>
+    </tr>
+  <tr>
+    <td><a  >some()</a></td>
+    <td>Checks if any of the elements in an array pass a test</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td><a  >sort()</a></td>
+    <td>Sorts the elements of an array</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td><a  >source</a></td>
+    <td>Returns the text of the RegExp pattern</td>
+    <td><a  >RegExp</a></td>
+  </tr>
+  <tr>
+  <td><a  >specified</a></td>
+  <td>Returns true if the attribute has been specified, otherwise it returns false</td>
+  <td><a  >Attribute</a></td>
+  </tr>
+  <tr>
+    <td><a  >splice()</a></td>
+    <td>Adds/Removes elements from an array</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td><a  >split()</a></td>
+    <td>Splits a string into an array of substrings</td>
+    <td><a  >String</a></td>
+    </tr>
+  <tr>
+    <td><a  >static</a></td>
+    <td>Defines a static method for a class</td>
+    <td><a  >Classes</a></td>
+    </tr>
+  <tr>
+    <td><a  >startsWith()</a></td>
+    <td>Checks whether a string begins with specified characters</td>
+    <td><a  >String</a></td>
+  </tr>
+  <tr>
+    <td>state</td>
+    <td>Returns an object containing a copy of the history entries</td>
+    <td><a  >PopStateEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >String()</a></td>
+    <td>Converts an object's value to a string</td>
+    <td><a  >Global</a></td>
+    </tr>
+  <tr>
+    <td><a  >stop()</a></td>
+    <td>Stops the window from loading</td>
+    <td><a  >Window</a></td>
+    </tr>
+  <tr>
+    <td><a  >stopImmediatePropagation()</a></td>
+    <td>Prevents other listeners of the same event from being called</td>
+    <td><a  >Event</a></td>
+  </tr>
+  <tr>
+    <td><a  >stopPropagation()</a></td>
+    <td>Prevents further propagation of an event during event flow</td>
+    <td><a  >Event</a></td>
+  </tr>
+  <tr>
+    <td><a  >stringify()</a></td>
+    <td>Convert a JavaScript object to a JSON string</td>
+    <td><a  >JSON</a></td>
+  </tr>
+  <tr>
+    <td><a  >sqrt()</a></td>
+    <td>Returns the square root of x</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >SQRT1_2</a></td>
+    <td>Returns the square root of 1/2 (approx. 0.707)</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >SQRT2</a></td>
+    <td>Returns the square root of 2 (approx. 1.414)</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >status</a></td>
+    <td>Sets or returns the text in the statusbar of a window</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+  <td><a  >strictErrorChecking</a></td>
+  <td>Sets or returns whether error-checking is enforced or not</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td>storageArea</td>
+    <td>Returns an object representing the affected storage object</td>
+    <td><a  >StorageEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >style</a></td>
+    <td>Sets or returns the value of the style attribute of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >substr()</a></td>
+    <td>Extracts the characters from a string, beginning at a specified start position, and through the specified number of character</td>
+    <td><a  >String</a></td>
+  </tr>
+  <tr>
+    <td><a  >substring()</a></td>
+    <td>Extracts the characters from a string, between two specified indices</td>
+    <td><a  >String</a></td>
+  </tr>
+  <tr>
+    <td><a  >super</a></td>
+    <td>Refers to the parent class</td>
+    <td><a  >Classes</a></td>
+    </tr>
+  <tr>
+<td><a  >switch</a></td>
+<td>Marks a block of statements to be executed depending on different cases</td>
+  <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+    <td><a  >table()</a></td>
+    <td>Displays tabular data as a table</td>
+    <td><a  >Console</a></td>
+    </tr>
+  <tr>
+    <td><a  >tabIndex</a></td>
+    <td>Sets or returns the value of the tabindex attribute of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+  <td><a  >tagName</a></td>
+  <td>Returns the tag name of an element</td>
+    <td><a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >tan()</a></td>
+    <td>Returns the tangent of an angle</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >tanh()</a></td>
+    <td>Returns the hyperbolic tangent of a number</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+    <td><a  >target</a></td>
+    <td>Returns the element that triggered the event</td>
+    <td><a  >Event</a></td>
+  </tr>
+  <tr>
+  <td><a  >targetTouches</a></td>
+  <td>Returns a list of all the touch objects that are in contact with the 
+  surface and where the touchstart event occured on the same target element as 
+  the current target element</td>
+  <td><a  >TouchEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >test()</a></td>
+    <td>Tests for a match in a string. Returns true or false</td>
+    <td><a  >RegExp</a></td>
+  </tr>
+  <tr>
+  <td><a  >textContent</a></td>
+  <td>Sets or returns the textual content of a node and its descendants</td>
+  <td><a  >Element</a></td>
+  </tr>
+    <tr>
+    <td>this</td>
+    <td>Refers to the object it belongs to</td>
+    <td></td>
+    </tr>
+
+  <tr>
+<td><a  >throw</a></td>
+<td>Throws (generates) an error</td>
+  <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+    <td><a  >time()</a></td>
+    <td>Starts a timer (can track how long an operation takes)</td>
+    <td><a  >Console</a></td>
+    </tr>
+  <tr>
+    <td><a  >timeEnd()</a></td>
+    <td>Stops a timer that was previously started by console.time()</td>
+    <td><a  >Console</a></td>
+    </tr>
+  <tr>
+    <td><a  >timeStamp</a></td>
+    <td>Returns the time (in milliseconds relative to the epoch) at which  the event was created</td>
+    <td><a  >Event</a></td>
+  </tr>
+  <tr>
+    <td><a  >title</a></td>
+    <td>Sets or returns the title of the document</td>
+    <td><a  >Document</a>, <a  >Element</a></td>
+  </tr>
+  <tr>
+    <td><a  >toDateString()</a></td>
+    <td>Converts the date portion of a Date object into a readable string</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td>toGMTString()</td>
+    <td><span class="deprecated">Deprecated.</span> Use the <a  >toUTCString()</a> method instead</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >toExponential()</a></td>
+    <td>Converts a number into an exponential notation</td>
+    <td><a  >Number</a></td>
+  </tr>
+  <tr>
+    <td><a  >toFixed(x)</a></td>
+    <td>Formats a number with x numbers of digits after the decimal point</td>
+    <td><a  >Number</a></td>
+  </tr>
+  <tr>
+    <td><a  >toJSON()</a></td>
+    <td>Returns the date as a string, formatted as a JSON date</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >toISOString()</a></td>
+    <td>Returns the date as a string, using the ISO standard</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >toLocaleDateString()</a></td>
+    <td>Returns the date portion of a Date object as a string, using locale conventions</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >toLocaleLowerCase()</a></td>
+    <td>Converts a string to lowercase letters, according to the host's locale</td>
+    <td><a  >String</a></td>
+  </tr>
+  <tr>
+    <td><a  >toLocaleString()</a></td>
+    <td>Converts a Date object to a string, using locale conventions</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >toLocaleTimeString()</a></td>
+    <td>Returns the time portion of a Date object as a string, using locale conventions</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >toLocaleUpperCase()</a></td>
+    <td>Converts a string to uppercase letters, according to the host's locale</td>
+    <td><a  >String</a></td>
+  </tr>
+  <tr>
+    <td><a  >toLowerCase()</a></td>
+    <td>Converts a string to lowercase letters</td>
+    <td><a  >String</a></td>
+  </tr>
+  <tr>
+    <td><a  >top</a></td>
+    <td>Returns the topmost browser window</td>
+    <td><a  >Window</a></td>
+  </tr>
+  <tr>
+    <td><a  >toPrecision(x)</a></td>
+    <td>Formats a number to x length</td>
+    <td><a  >Number</a></td>
+  </tr>
+  <tr>
+    <td><a  >toString()</a></td>
+    <td>Converts an array to a string, and returns the result</td>
+    <td><a  >Array</a>, <a  >Boolean</a>, <a  >Date</a>, <a  >Number</a>, <a  >RegExp</a>, <a  >String</a>, <a  >Element</a></td>
+    </tr>
+  <tr>
+  <td>total</td>
+  <td>Returns the total amount of work that will be loaded</td>
+  <td><a  >ProgressEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >toTimeString()</a></td>
+    <td>Converts the time portion of a Date object to a string</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+  <td><a  >touches</a></td>
+  <td>Returns a list of all the touch objects that are currently in contact with 
+  the surface</td>
+  <td><a  >TouchEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >toUpperCase()</a></td>
+    <td>Converts a string to uppercase letters</td>
+    <td><a  >String</a></td>
+  </tr>
+  <tr>
+    <td><a  >toUTCString()</a></td>
+    <td>Converts a Date object to a string, according to universal time</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+    <td><a  >trace()</a></td>
+    <td>Outputs a stack trace to the console</td>
+    <td><a  >Console</a></td>
+    </tr>
+  <tr>
+  <td><a  >transitionend</a></td>
+  <td>The event occurs when a CSS transition has completed</td>
+  <td><a  >TransitionEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >trim()</a></td>
+    <td>Removes whitespace from both ends of a string</td>
+    <td><a  >String</a></td>
+  </tr>
+  <tr>
+    <td><a  >trunc()</a></td>
+    <td>Returns the integer part of a number (x)</td>
+    <td><a  >Math</a></td>
+  </tr>
+  <tr>
+<td><a  >try ... catch ... finally</a></td>
+<td>Marks the block of statements to be executed when an error occurs in a try 
+block, and implements error handling</td>
+  <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+    <td><a  >type</a></td>
+    <td>Returns the name of the event</td>
+    <td><a  >Event</a></td>
+  </tr>
+  <tr>
+    <td>typeof</td>
+    <td>Returns the type of a variable, object, function or expression</td>
+    <td><a  >Operators</a></td>
+  </tr>
+  <tr>
+    <td><a  >undefined</a></td>
+    <td>Indicates that a variable has not been assigned a value</td>
+    <td><a  >Global</a></td>
+    </tr>
+  <tr>
+    <td><a  >unescape()</a></td>
+    <td><span class="deprecated">Deprecated in version 1.5.</span> Use <a  >decodeURI()</a> or <a  >decodeURIComponent()</a> instead</td>
+    <td><a  >Global</a></td>
+  </tr>
+  <tr>
+    <td><a  >unshift()</a></td>
+    <td>Adds new elements to the beginning of an array, and returns the new length</td>
+    <td><a  >Array</a></td>
+    </tr>
+  <tr>
+    <td>url</td>
+    <td>Returns the URL of the changed item's document</td>
+    <td><a  >StorageEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >URL</a></td>
+    <td>Returns the full URL of the HTML document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >userAgent</a></td>
+    <td>Returns the user-agent header sent by the browser to 
+    the server</td>
+    <td><a  >Navigator</a></td>
+  </tr>
+  <tr>
+    <td><a  >UTC()</a></td>
+    <td>Returns the number of milliseconds in a date since midnight of January 1, 1970, according to UTC time</td>
+    <td><a  >Date</a></td>
+  </tr>
+  <tr>
+  <td><a  >value</a></td>
+  <td>Sets or returns the value of the attribute</td>
+  <td><a  >Attribute</a></td>
+  </tr>
+  <tr>
+    <td><a  >valueOf()</a></td>
+    <td>Returns the primitive value of an array</td>
+    <td><a  >Array</a>, <a  >Boolean</a>, <a  >Date</a>, <a  >Number</a>, <a  >String</a></td>
+    </tr>
+  <tr>
+<td><a  >var</a></td>
+<td>Declares a variable</td>
+  <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+    <td><a  >warn()</a></td>
+    <td>Outputs a warning message to the console</td>
+    <td><a  >Console</a></td>
+    </tr>
+  <tr>
+    <td>watchPosition()</td>
+    <td>Returns a watch ID value that then can be used to unregister the handler 
+    by passing it to the Geolocation.clearWatch() method</td>
+    <td><a  >Geolocation</a></td>
+    </tr>
+  <tr>
+    <td><a  >which</a></td>
+    <td>Returns which mouse button was pressed when the mouse event was triggered</td>
+    <td><a  >MouseEvent</a>, <a  >KeyboardEvent</a></td>
+  </tr>
+  <tr>
+    <td><a  >width</a></td>
+    <td>Returns the total width of the screen</td>
+    <td><a  >Screen</a></td>
+  </tr>
+  <tr>
+    <td><a  >view</a></td>
+    <td>Returns a reference to the Window object where the event occurred</td>
+    <td><a  >UiEvent</a></td>
+  </tr>
+  <tr>
+    <td>void</td>
+    <td>Evaluates an expression and returns undefined</td>
+    <td><a  >Operators</a></td>
+  </tr>
+  <tr>
+<td><a  >while</a></td>
+<td>Marks a block of statements to be executed while a condition is true</td>
+  <td><a  >Statements</a></td>
+  </tr>
+  <tr>
+    <td><a  >write()</a></td>
+    <td>Writes HTML expressions or JavaScript code to a document</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td><a  >writeln()</a></td>
+    <td>Same as write(), but adds a newline character after each statement</td>
+    <td><a  >Document</a></td>
+  </tr>
+  <tr>
+    <td>yield</td>
+    <td>Pauses and resumes a generator function</td>
+    <td><a  >Operators</a></td>
+  </tr>
+</table>
+</div>
+</body>
+<script>
+function filterSearch() {
+  var a, l, b, i, j, c, ahref, s, tr, td;
+    c = document.getElementById("searchstring").value.toUpperCase();
+    a = document.getElementById("jsreftable").getElementsByClassName("js-table");
+    //h = document.getElementById("jsreftable").getElementsByTagName("h2");
+    for (j = 0; j < a.length; j++) {
+      s = 0;
+      tr = a[j].getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          cc = td.textContent;
+          if (cc.toUpperCase().indexOf(c) > -1) {
+            tr[i].style.display = "";
+            s = 1;
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+        if (i == (tr.length - 1)) {
+          if (s == 0) {
+            a[j].style.display = "none";
+      //      h[j].style.display = "none";
+          } else {
+            a[j].style.display = "";
+        //    h[j].style.display = "";
+            fixStripes(tr);
+          }
+        }
+      }
+    }
+}
+
+// function fixStripes(a) {
+//   var i, c = 0, n = 0;
+//   for (i = 0; i < a.length; i++) {
+//     if (a[i].style.display != "none") {
+//       if (c == 0) {
+//         a[i].style.backgroundColor = "#E7E9EB";
+//         c = 1;
+//       } else {
+//         a[i].style.backgroundColor = "#ffffff";
+//         c = 0;
+//       }
+//     }
+//   }
+// }
+</script>
+</html>

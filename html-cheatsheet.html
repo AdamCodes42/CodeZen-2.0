@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/html-cheatsheet.css">
+  <link rel="icon" type="image/png" style="filter: invert(100%);" sizes="32x32" href="./images/favicon/favicon-1.png">
+  <title>html-cheatsheet</title>
+</head>
+
+<body>
+  <nav>
+   <ul class="nav-bar">
+     <li ><a class="nav-links" href="./css-cheatsheet.html">CSS-CheatSheet</a> </li>
+     <li ><a  class="nav-links" href="./js-cheatsheet.html">JS-Cheatsheet</a> </li>
+   </ul>
+  </nav>
+  <div id="html-sheet">
+    <header>
+      <img style="filter: invert(100%); width:4em;" src="./images/html-logo.svg" alt="">
+      <h1 style="text-align: center;">HTML Cheatsheet</h1>
+      <img style="filter: invert(100%); width:4em;" src="./images/html-logo.svg" alt="">
+    </header>
+    <div class="col">
+
+      <div class="boiler-plate">
+        <p>
+          <div>
+            <h1>Boiler Plate HTML </h1>
+            <button class="copy-btn" onclick="CopyToClipboard('starting-template')">Copy</button>
+          </div>
+
+      <xmp id="starting-template">
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>HTML 5 Boilerplate</title>
+          <link rel="stylesheet" href="style.css">
+
+        </head>
+
+          <h1>Hello World!</h1>
+
+          <p>Welcome....</p>
+
+        <body>
+          <script src="index.js"></script>
+        </body>
+        
+        </html>
+      </xmp>
+    </p>
+  </div>
+  <div class="head-tags">
+    <div>
+      <h1>Head Tags</h1>
+      <button class="copy-btn" onclick="CopyToClipboard('heads')">Copy</button>
+    </div>
+    <xmp id="heads">
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://htmlcheatsheet.com/" />
+<title>HTML CheatSheet</title>
+<meta name="description" content="A brief page description">
+<meta name="keywords" content="html,cheatsheet" />
+<meta property="fb:admins" content="YourFacebookUsername" />
+<meta property="og:title" content="HTML CheatSheet" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://htmlcheatsheet.com/" />
+<meta property="og:image" content="https://htmlcheatsheet.com/images/html-cheatsheet.jpg" />
+<meta property="og:description" content="A brief page description" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="alternate" hreflang="es" href="https://htmlcheatsheet.com/spanish/" />
+<link rel="stylesheet" href="/styles.css">
+<script src="/script.js"></script>
+</head>
+    </xmp>
+  </div>
+  </div>
+</div>
+  <main>
+    <div class="all-tags">
+      
+      <div class="search-bar">
+        <input type="text" id="searchstring" name="search" placeholder="Search.." oninput="filterSearch()">
+      </div>
+      <div id="htmltags">
+        <table class="tag-table">
+          <tr>
+            <th style="width:25%">Tag</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><a>&lt;!--...--&gt;</a></td>
+            <td>Defines a comment</td>
+          </tr>
+          <tr>
+            <td><a>&lt;!DOCTYPE&gt;</a>&nbsp;</td>
+            <td>Defines the document type</td>
+          </tr>
+          <tr>
+            <td><a>&lt;a&gt;</a></td>
+            <td>Defines a hyperlink</td>
+          </tr>
+          <tr>
+            <td><a>&lt;abbr&gt;</a></td>
+            <td>Defines an abbreviation or an acronym</td>
+          </tr>
+          <tr>
+            <td><a class="notsupported">&lt;acronym&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use <a>&lt;abbr&gt;</a> instead.<br></span>Defines an
+              acronym</td>
+          </tr>
+          <tr>
+            <td><a>&lt;address&gt;</a></td>
+            <td>Defines contact information for the author/owner of a document</td>
+          </tr>
+          <tr>
+            <td><a class="notsupported">&lt;applet&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use <a>&lt;embed&gt;</a> or <a>&lt;object&gt;</a>
+                instead.<br></span>Defines an embedded applet</td>
+          </tr>
+          <tr>
+            <td><a>&lt;area&gt;</a></td>
+            <td>Defines an area inside an image map</td>
+          </tr>
+          <tr>
+            <td class="html5badge"><a>&lt;article&gt;</a></td>
+            <td>Defines an article</td>
+          </tr>
+          <tr>
+            <td class="html5badge"><a>&lt;aside&gt;</a></td>
+            <td>Defines content aside from the page content</td>
+          </tr>
+          <tr>
+            <td class="html5badge"><a>&lt;audio&gt;</a></td>
+            <td>Defines embedded sound content</td>
+          </tr>
+          <tr>
+            <td><a>&lt;b&gt;</a></td>
+            <td>Defines bold text</td>
+          </tr>
+          <tr>
+            <td><a>&lt;base&gt;</a></td>
+            <td>Specifies the base URL/target for all relative URLs in a document</td>
+          </tr>
+          <tr>
+            <td><a class="notsupported">&lt;basefont&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Specifies a default color,
+              size, and font for all text in a document</td>
+          </tr>
+          <tr>
+            <td><a>&lt;bdi&gt;</a></td>
+            <td>Isolates a part of text that might be formatted in a different direction
+              from other text outside it</td>
+          </tr>
+          <tr>
+            <td><a>&lt;bdo&gt;</a></td>
+            <td>Overrides the current text direction</td>
+          </tr>
+          <tr>
+            <td><a class="notsupported">&lt;big&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines big text</td>
+          </tr>
+          <tr>
+            <td><a>&lt;blockquote&gt;</a></td>
+            <td>Defines a section that is quoted from another source</td>
+          </tr>
+          <tr>
+            <td><a>&lt;body&gt;</a></td>
+            <td>Defines the document's body</td>
+          </tr>
+          <tr>
+            <td><a>&lt;br&gt;</a></td>
+            <td>Defines a single line break</td>
+          </tr>
+          <tr>
+            <td><a>&lt;button&gt;</a></td>
+            <td>Defines a clickable button</td>
+          </tr>
+          <tr>
+            <td><a>&lt;canvas&gt;</a></td>
+            <td>Used to draw graphics, on the fly, via scripting (usually JavaScript)</td>
+          </tr>
+          <tr>
+            <td><a>&lt;caption&gt;</a></td>
+            <td>Defines a table caption</td>
+          </tr>
+          <tr>
+            <td><a class="notsupported">&lt;center&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines centered text</td>
+          </tr>
+          <tr>
+            <td><a>&lt;cite&gt;</a></td>
+            <td>Defines the title of a work</td>
+          </tr>
+          <tr>
+            <td><a>&lt;code&gt;</a></td>
+            <td>Defines a piece of computer code</td>
+          </tr>
+          <tr>
+            <td><a>&lt;col&gt;</a></td>
+            <td>Specifies column properties for each column within a &lt;colgroup&gt; element&nbsp;</td>
+          </tr>
+          <tr>
+            <td><a>&lt;colgroup&gt;</a></td>
+            <td>Specifies a group of one or more columns in a table for formatting</td>
+          </tr>
+          <tr>
+            <td><a>&lt;data&gt;</a></td>
+            <td>Adds a machine-readable
+              translation of a given content</td>
+          </tr>
+          <tr>
+            <td><a>&lt;datalist&gt;</a></td>
+            <td>Specifies a list of pre-defined options for input controls</td>
+          </tr>
+          <tr>
+            <td><a>&lt;dd&gt;</a></td>
+            <td>Defines a description/value of a term in a description list</td>
+          </tr>
+          <tr>
+            <td><a>&lt;del&gt;</a></td>
+            <td>Defines text that has been deleted from a document</td>
+          </tr>
+          <tr>
+            <td><a>&lt;details&gt;</a></td>
+            <td>Defines additional details that the user can view or hide</td>
+          </tr>
+          <tr>
+            <td><a>&lt;dfn&gt;</a></td>
+            <td>Specifies a term that is going to be defined within the content</td>
+          </tr>
+          <tr>
+            <td><a>&lt;dialog&gt;</a></td>
+            <td>Defines a dialog box or window</td>
+          </tr>
+          <tr>
+            <td><a class="notsupported">&lt;dir&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use <a>&lt;ul&gt;</a> instead.<br></span>Defines a
+              directory list</td>
+          </tr>
+          <tr>
+            <td><a>&lt;div&gt;</a></td>
+            <td>Defines a section in a document</td>
+          </tr>
+          <tr>
+            <td><a>&lt;dl&gt;</a></td>
+            <td>Defines a description list</td>
+          </tr>
+          <tr>
+            <td><a>&lt;dt&gt;</a></td>
+            <td>Defines a term/name in a description list</td>
+          </tr>
+          <tr>
+            <td><a>&lt;em&gt;</a></td>
+            <td>Defines emphasized text&nbsp;</td>
+          </tr>
+          <tr>
+            <td><a>&lt;embed&gt;</a></td>
+            <td>Defines a container for an external application</td>
+          </tr>
+          <tr>
+            <td><a>&lt;fieldset&gt;</a></td>
+            <td>Groups related elements in a form</td>
+          </tr>
+          <tr>
+            <td class="html5badge"><a>&lt;figcaption&gt;</a></td>
+            <td>Defines a caption for a &lt;figure&gt; element</td>
+          </tr>
+          <tr>
+            <td class="html5badge"><a>&lt;figure&gt;</a></td>
+            <td>Specifies self-contained content</td>
+          </tr>
+          <tr>
+            <td><a class="notsupported">&lt;font&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines font, color, and
+              size for text</td>
+          </tr>
+          <tr>
+            <td><a>&lt;footer&gt;</a></td>
+            <td>Defines a footer for a document or section</td>
+          </tr>
+          <tr>
+            <td><a>&lt;form&gt;</a></td>
+            <td>Defines an HTML form for user input</td>
+          </tr>
+          <tr>
+            <td><a class="notsupported">&lt;frame&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5.<br></span>Defines a window (a frame) in a frameset</td>
+          </tr>
+          <tr>
+            <td><a class="notsupported">&lt;frameset&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5.<br></span>Defines a set of frames</td>
+          </tr>
+          <tr>
+            <td><a>&lt;h1&gt; to &lt;h6&gt;</a></td>
+            <td> Defines HTML headings</td>
+          </tr>
+          <tr>
+            <td><a>&lt;head&gt;</a></td>
+            <td>Contains metadata/information for the document</td>
+          </tr>
+          <tr>
+            <td><a>&lt;header&gt;</a></td>
+            <td>Defines a header for a document or section</td>
+          </tr>
+          <tr>
+            <td><a>&lt;hr&gt;</a></td>
+            <td> Defines a thematic change in the content</td>
+          </tr>
+          <tr>
+            <td><a>&lt;html&gt;</a></td>
+            <td>Defines the root of an HTML document</td>
+          </tr>
+          <tr>
+            <td><a>&lt;i&gt;</a></td>
+            <td>Defines a part of text in an alternate voice or mood</td>
+          </tr>
+          <tr>
+            <td><a>&lt;iframe&gt;</a></td>
+            <td>Defines an inline frame</td>
+          </tr>
+          <tr>
+            <td><a>&lt;img&gt;</a></td>
+            <td>Defines an image</td>
+          </tr>
+          <tr>
+            <td><a>&lt;input&gt;</a></td>
+            <td>Defines an input control</td>
+          </tr>
+          <tr>
+            <td><a>&lt;ins&gt;</a></td>
+            <td>Defines a text that has been inserted into a document</td>
+          </tr>
+          <tr>
+            <td><a>&lt;kbd&gt;</a></td>
+            <td>Defines keyboard input</td>
+          </tr>
+          <tr>
+            <td><a>&lt;label&gt;</a></td>
+            <td>Defines a label&nbsp;for an &lt;input&gt; element</td>
+          </tr>
+          <tr>
+            <td><a>&lt;legend&gt;</a></td>
+            <td>Defines a caption for a &lt;fieldset&gt; element</td>
+          </tr>
+          <tr>
+            <td><a>&lt;li&gt;</a></td>
+            <td>Defines a list item</td>
+          </tr>
+          <tr>
+            <td><a>&lt;link&gt;</a></td>
+            <td>Defines the relationship between a document and an external resource (most
+              used to link to style sheets)</td>
+          </tr>
+          <tr>
+            <td><a>&lt;main&gt;</a></td>
+            <td>Specifies the main content of a document</td>
+          </tr>
+          <tr>
+            <td><a>&lt;map&gt;</a></td>
+            <td>Defines an image map</td>
+          </tr>
+          <tr>
+            <td><a>&lt;mark&gt;</a></td>
+            <td>Defines marked/highlighted text</td>
+          </tr>
+          <tr>
+            <td><a>&lt;meta&gt;</a></td>
+            <td>Defines metadata about an HTML document</td>
+          </tr>
+          <tr>
+            <td><a>&lt;meter&gt;</a></td>
+            <td>Defines a scalar measurement within a known range (a gauge)</td>
+          </tr>
+          <tr>
+            <td><a>&lt;nav&gt;</a></td>
+            <td>Defines navigation links</td>
+          </tr>
+          <tr>
+            <td><a class="notsupported">&lt;noframes&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5.<br></span>Defines an alternate content for users that
+              do not support frames</td>
+          </tr>
+          <tr>
+            <td><a>&lt;noscript&gt;</a></td>
+            <td>Defines an alternate content for users that do not support
+              client-side scripts</td>
+          </tr>
+          <tr>
+            <td><a>&lt;object&gt;</a></td>
+            <td>Defines a container for an external application</td>
+          </tr>
+          <tr>
+            <td><a>&lt;ol&gt;</a></td>
+            <td>Defines an ordered list</td>
+          </tr>
+          <tr>
+            <td><a>&lt;optgroup&gt;</a></td>
+            <td>Defines a group of related options in a drop-down list</td>
+          </tr>
+          <tr>
+            <td><a>&lt;option&gt;</a></td>
+            <td>Defines an option in a drop-down list</td>
+          </tr>
+          <tr>
+            <td><a>&lt;output&gt;</a></td>
+            <td>Defines the result of a calculation</td>
+          </tr>
+          <tr>
+            <td><a>&lt;p&gt;</a></td>
+            <td>Defines a paragraph</td>
+          </tr>
+          <tr>
+            <td><a>&lt;param&gt;</a></td>
+            <td>Defines a parameter for an object</td>
+          </tr>
+          <tr>
+            <td><a>&lt;picture&gt;</a></td>
+            <td>Defines a container for multiple image resources</td>
+          </tr>
+          <tr>
+            <td><a>&lt;pre&gt;</a></td>
+            <td>Defines preformatted text</td>
+          </tr>
+          <tr>
+            <td><a>&lt;progress&gt;</a></td>
+            <td>Represents the progress of a task</td>
+          </tr>
+          <tr>
+            <td><a>&lt;q&gt;</a></td>
+            <td>Defines a short quotation</td>
+          </tr>
+          <tr>
+            <td><a>&lt;rp&gt;</a></td>
+            <td>Defines what to show in browsers that do not support ruby annotations</td>
+          </tr>
+          <tr>
+            <td><a>&lt;rt&gt;</a></td>
+            <td>Defines an explanation/pronunciation of characters (for East Asian
+              typography)</td>
+          </tr>
+          <tr>
+            <td><a>&lt;ruby&gt;</a></td>
+            <td>Defines a ruby annotation (for East Asian typography)</td>
+          </tr>
+          <tr>
+            <td><a>&lt;s&gt;</a></td>
+            <td>Defines text that is no longer correct</td>
+          </tr>
+          <tr>
+            <td><a>&lt;samp&gt;</a></td>
+            <td>Defines sample output from a computer program</td>
+          </tr>
+          <tr>
+            <td><a>&lt;script&gt;</a></td>
+            <td>Defines a client-side script</td>
+          </tr>
+          <tr>
+            <td><a>&lt;section&gt;</a></td>
+            <td>Defines a section in a document</td>
+          </tr>
+          <tr>
+            <td><a>&lt;select&gt;</a></td>
+            <td>Defines a drop-down list</td>
+          </tr>
+          <tr>
+            <td><a>&lt;small&gt;</a></td>
+            <td>Defines smaller text</td>
+          </tr>
+          <tr>
+            <td><a>&lt;source&gt;</a></td>
+            <td>Defines multiple media resources for media elements (&lt;video&gt; and &lt;audio&gt;)</td>
+          </tr>
+          <tr>
+            <td><a>&lt;span&gt;</a></td>
+            <td>Defines a section in a document</td>
+          </tr>
+          <tr>
+            <td><a class="notsupported">&lt;strike&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use <a>&lt;del&gt;</a> or <a>&lt;s&gt;</a>
+                instead.<br></span>Defines strikethrough text</td>
+          </tr>
+          <tr>
+            <td><a>&lt;strong&gt;</a></td>
+            <td>Defines important text</td>
+          </tr>
+          <tr>
+            <td><a>&lt;style&gt;</a></td>
+            <td>Defines style information for a document</td>
+          </tr>
+          <tr>
+            <td><a>&lt;sub&gt;</a></td>
+            <td>Defines subscripted text</td>
+          </tr>
+          <tr>
+            <td><a>&lt;summary&gt;</a></td>
+            <td>Defines a visible heading for a &lt;details&gt; element</td>
+          </tr>
+          <tr>
+            <td><a>&lt;sup&gt;</a></td>
+            <td>Defines superscripted text</td>
+          </tr>
+          <tr>
+            <td><a>&lt;svg&gt;</a></td>
+            <td>Defines a container for SVG graphics</td>
+          </tr>
+          <tr>
+            <td><a>&lt;table&gt;</a></td>
+            <td>Defines a table</td>
+          </tr>
+          <tr>
+            <td><a>&lt;tbody&gt;</a></td>
+            <td>Groups the body content in a table</td>
+          </tr>
+          <tr>
+            <td><a>&lt;td&gt;</a></td>
+            <td>Defines a cell in a table</td>
+          </tr>
+          <tr>
+            <td><a>&lt;template&gt;</a></td>
+            <td>Defines a container for content that should be hidden when the page loads</td>
+          </tr>
+          <tr>
+            <td><a>&lt;textarea&gt;</a></td>
+            <td>Defines a multiline input control (text area)</td>
+          </tr>
+          <tr>
+            <td><a>&lt;tfoot&gt;</a></td>
+            <td>Groups the footer content in a table</td>
+          </tr>
+          <tr>
+            <td><a>&lt;th&gt;</a></td>
+            <td>Defines a header cell in a table</td>
+          </tr>
+          <tr>
+            <td><a>&lt;thead&gt;</a></td>
+            <td>Groups the header content in a table</td>
+          </tr>
+          <tr>
+            <td><a>&lt;time&gt;</a></td>
+            <td>Defines a specific time (or datetime)</td>
+          </tr>
+          <tr>
+            <td><a>&lt;title&gt;</a></td>
+            <td>Defines a title for the document</td>
+          </tr>
+          <tr>
+            <td><a>&lt;tr&gt;</a></td>
+            <td>Defines a row in a table</td>
+          </tr>
+          <tr>
+            <td><a>&lt;track&gt;</a></td>
+            <td>Defines text tracks for media elements (&lt;video&gt; and &lt;audio&gt;)</td>
+          </tr>
+          <tr>
+            <td><a class="notsupported">&lt;tt&gt;</a></td>
+            <td><span class="deprecated">Not supported in HTML5. Use CSS instead.<br></span>Defines teletype text</td>
+          </tr>
+          <tr>
+            <td><a>&lt;u&gt;</a></td>
+            <td>Defines some text that is unarticulated and styled differently from normal
+              text</td>
+          </tr>
+          <tr>
+            <td><a>&lt;ul&gt;</a></td>
+            <td>Defines an unordered list</td>
+          </tr>
+          <tr>
+            <td><a>&lt;var&gt;</a></td>
+            <td>Defines a variable</td>
+          </tr>
+          <tr>
+            <td><a>&lt;video&gt;</a></td>
+            <td>Defines embedded video content</td>
+          </tr>
+          <tr>
+            <td><a>&lt;wbr&gt;</a></td>
+            <td>Defines a possible line-break</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <section>
+      <div class="table-structure">
+        <div class="headline">
+          <h1>Table</h1>
+          <button class="copy-btn" onclick="CopyToClipboard('htmlTable')">Copy</button>
+        </div>
+        <xmp id="htmlTable">
+          <table>
+            <caption>Phone numbers</caption>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th colspan="2">Phone</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>577854</td>
+                <td>577855</td>
+              </tr>
+              <tr>
+                <td>Jack</td>
+                <td>577856</td>
+                <td>577857</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>&nbsp;</td>
+                <td>Personal</td>
+                <td>Office</td>
+              </tr>
+            </tfoot>
+          </table>
+        </xmp>
+      </div>
+
+      <div class="form-structure">
+        <div class="headline">
+          <h1>Form</h1>
+          <button class="copy-btn" onclick="CopyToClipboard('htmlform')">Copy</button>
+        </div>
+        <xmp id="htmlform">
+          <form action="">
+            <fieldset>
+              <legend>Personal Details</legend>
+            <br>
+            <label for="name">Name:</label>
+            <input type="text"><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <br><br>
+            <label for="address">Address:</label><br>
+            <textarea name="address" id="" cols="30" rows="2"></textarea><br>
+            <label for="lang">Language:</label>
+            <input type="checkbox" id="lang1" name="lang" value="English">
+            <label for="lang1">English</label>
+            <input type="checkbox" id="lang2" name="vehicle2" value="Hindi">
+            <label for="lang2">Hindi</label>
+            <input type="checkbox" id="lang3" name="vehicle3" value="Marathi">
+            <label for="lang">Marathi</label>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Contact Info</legend>
+            <label for="number">Mobile Number:</label>
+            <input type="number"><br>
+            <label for="email">Email:</label>
+            <input type="email">
+          </fieldset>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </xmp>
+    </section>
+  </main>
+  <script type="text/javascript">
+
+function CopyToClipboard(id)
+{
+var r = document.createRange();
+r.selectNode(document.getElementById(id));
+window.getSelection().removeAllRanges();
+window.getSelection().addRange(r);
+document.execCommand('copy');
+window.getSelection().removeAllRanges();
+}
+
+
+    function filterSearch() {
+      var a, l, b, i, j, c, ahref, s, tr, td;
+      c = document.getElementById("searchstring").value.toUpperCase();
+      a = document.getElementById("htmltags").getElementsByClassName("tag-table");
+      //h = document.getElementById("htmltags").getElementsByTagName("h2");
+      for (j = 0; j < a.length; j++) {
+        s = 0;
+        tr = a[j].getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            ahref = td.getElementsByTagName("a")[0];
+            if (ahref) {
+              ahref = ahref.innerHTML;
+              ahref = ahref.replace("&lt;", "");
+              ahref = ahref.replace("&gt;", "");
+              if (ahref.toUpperCase().indexOf(c) > -1) {
+                tr[i].style.display = "";
+                s = 1;
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+          if (i == (tr.length - 1)) {
+            if (s == 0) {
+              a[j].style.display = "none";
+              //h[j].style.display = "none";
+            } else {
+              a[j].style.display = "";
+              //h[j].style.display = "";
+              fixStripes(tr);
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script>
+  </script>
+</body>
+
+</html>

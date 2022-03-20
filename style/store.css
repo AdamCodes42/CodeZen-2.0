@@ -1,0 +1,117 @@
+:root{
+    --insta-color:#ff0062;
+    --facebook-color:#0084ff;
+    --github-color:#747474;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar-corner{
+    border-radius: 40px;
+    
+}
+body::-webkit-scrollbar-track {
+    border-radius: 40px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: 
+    #091f3a;
+    outline: 1px solid slategrey;
+    border-radius: 40px;
+    border:6px solid #fff;
+    margin: -2em 0em -2em 0em;
+  }
+  #preloader{
+    width:100%;
+    height:100vh;
+    background: url('./preloader1.gif') no-repeat center center;
+    background-size: 50%;
+    background-color: #030e31;
+    position: fixed;
+    z-index: 100 ;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding:20px;
+    max-height: 100px;
+}
+.logo{
+    width:10em;
+    filter:invert(100%);
+}
+.nav-name{
+    color:#fff;
+    display: none;
+}
+.nav-link:hover  span{
+    display: block;
+}
+#hide{
+    display: none;
+}
+.price{
+    background-color: #091f3a;
+    color:#fff;
+    border-radius: 10px;
+    padding:10px;
+    font-size: smaller;
+}
+.price:hover{
+    background-color: #fff;
+    color:#091f3a;
+    border: 1px solid #091f3a;
+}
+.box:hover{
+    border:0.3px solid #565758;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.view-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view{
+    border:1px solid #091f3a;
+    padding: 5px;
+    border-radius: 5px;
+    margin: -40px 0px 10px 0px;
+}
+.view:hover{
+    background-color: #091f3a;
+    color:#fff;
+}
+#hide{
+    margin-top: -6rem;
+}
+.carousel-item{
+    border:5px ridge black;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.fa-instagram{
+    color:var(--insta-color);
+}
+.fa-facebook{
+    color:var(--facebook-color);
+}
+.fa-github{
+    color:var(--github-color);
+}
+.fab:hover{
+    color:default;
+}

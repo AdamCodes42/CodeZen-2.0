@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css" integrity="sha512-5D0ofs3AsWoKsspH9kCWlY7qGxnHvdN/Yz2rTNwD9L271Mno85s+5ERo03qk9SUNtdgOZ4A9t8kRDexkvnWByA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" style="filter: invert(100%);" sizes="32x32" href="./images/favicon/favicon-1.png">
+    <link rel="stylesheet" href="./style/store.css">
+    <title>Store | CodeZen</title>
+  </head>
+  <body>
+    <div class="loder">
+      <div id="preloader">
+      </div>
+     </div>
+      <header class="bg-black">
+          <img src="./Icons/LoGo.svg" alt="" class="logo">
+          <nav>
+              <ul class="nav justify-content-end">
+                  <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"> <img style="filter: invert(100%); width:40px;" src="./Icons/house_black_36dp.svg" alt=""><span class="nav-name">Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Contact"><img style="filter: invert(100%); width: 40px;" src="./Icons/connect_without_contact_black_36dp.svg" alt=""><span class="nav-name">Contact</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active"><img style="filter: invert(100%); width:40px; cursor: pointer;" src="./Icons/cart.svg"><span class="nav-name">Cart</span></a>
+            </li>
+        </ul>
+          </nav>
+</header>
+    <main>
+        <div class="slider">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/Store-poster.png" class="d-block w-100" alt="...">
+                  </div>
+                  <!-- <div class="carousel-item">
+                    <img src="https://source.unsplash.com/collection/190727/1600x500" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://source.unsplash.com/collection/190727/1600x500" class="d-block w-100" alt="...">
+                  </div>
+                </div> -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="items">
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                   <div class="flex flex-wrap -m-4">
+
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                      <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/Hey-Girl-NAvy-500x600.jpg">
+                      </a>
+                      <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">Hey Girl</h2>
+                        <p class="mt-1">499/-</p>
+                    </div>
+                    <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                    </div>
+
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                      <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/Automate-Chill-Navy-Blue-500x600.jpg">
+                      </a>
+                      <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">Automate-Chill</h2>
+                        <p class="mt-1">499/-</p>
+                    </div>
+                    <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                      </div>
+                    
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                      <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/React-Navy-500x600.jpg">
+                      </a>
+                      <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">React-Navy</h2>
+                        <p class="mt-1">499/-</p>
+                    </div>
+                    <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                      </div>
+
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                      <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/Python-Programmer-Half-Sleeve-Grey-scaled-500x600.jpg">
+                      </a>
+                      <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">Python-Programmer</h2>
+                        <p class="mt-1">499/-</p>
+                    </div>
+                    <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                      </div>
+                    
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                      <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/Eat-Sleep-Code-Repeat-Navy-500x600.jpg">
+                      </a>
+                      <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">Eat-Sleep-Code-Repeat</h2>
+                        <p class="mt-1">499/-</p>
+                    </div>
+                    <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                      </div>
+                    
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                      <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/git-hub-500x600.jpg">
+                      </a>
+                      <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">git-hub</h2>
+                        <p class="mt-1">499/-</p>
+                    </div>
+                    <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                      </div>
+                  
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                      <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/Google-Cloud-Half-Sleeve-Navy-scaled-500x600.jpg">
+                      </a>
+                      <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">Google-Cloud</h2>
+                        <p class="mt-1">499/-</p>
+                    </div> 
+                    <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                      </div> 
+                    
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                      <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/There-is-No-Place-Like-Black-500x600.jpg">
+                      </a>
+                      <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">There-is-No-Place-Like-Black</h2>
+                        <p class="mt-1">499/-</p>
+                    </div>
+                    <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                      </div>
+                    
+                  </div>
+                </div>
+                <div id="hide" class="text-gray-600 body-font">
+                  
+                  <div class="container px-5 py-24 mx-auto">
+                    <div class="flex flex-wrap -m-4">
+ 
+                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                       <a class="block relative h-48 rounded overflow-hidden">
+                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/Hey-Girl-NAvy-500x600.jpg">
+                       </a>
+                       <div class="mt-4">
+                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                         <h2 class="text-gray-900 title-font text-lg font-medium">Hey Girl</h2>
+                         <p class="mt-1">499/-</p>
+                     </div>
+                     <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                     </div>
+ 
+                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                       <a class="block relative h-48 rounded overflow-hidden">
+                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/Automate-Chill-Navy-Blue-500x600.jpg">
+                       </a>
+                       <div class="mt-4">
+                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                         <h2 class="text-gray-900 title-font text-lg font-medium">Automate-Chill</h2>
+                         <p class="mt-1">499/-</p>
+                     </div>
+                     <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                       </div>
+                     
+                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                       <a class="block relative h-48 rounded overflow-hidden">
+                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/React-Navy-500x600.jpg">
+                       </a>
+                       <div class="mt-4">
+                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                         <h2 class="text-gray-900 title-font text-lg font-medium">React-Navy</h2>
+                         <p class="mt-1">499/-</p>
+                     </div>
+                     <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                       </div>
+ 
+                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                       <a class="block relative h-48 rounded overflow-hidden">
+                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/Python-Programmer-Half-Sleeve-Grey-scaled-500x600.jpg">
+                       </a>
+                       <div class="mt-4">
+                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                         <h2 class="text-gray-900 title-font text-lg font-medium">Python-Programmer</h2>
+                         <p class="mt-1">499/-</p>
+                     </div>
+                     <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                       </div>
+                     
+                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                       <a class="block relative h-48 rounded overflow-hidden">
+                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/Eat-Sleep-Code-Repeat-Navy-500x600.jpg">
+                       </a>
+                       <div class="mt-4">
+                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                         <h2 class="text-gray-900 title-font text-lg font-medium">Eat-Sleep-Code-Repeat</h2>
+                         <p class="mt-1">499/-</p>
+                     </div>
+                     <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                       </div>
+                     
+                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                       <a class="block relative h-48 rounded overflow-hidden">
+                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/git-hub-500x600.jpg">
+                       </a>
+                       <div class="mt-4">
+                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                         <h2 class="text-gray-900 title-font text-lg font-medium">git-hub</h2>
+                         <p class="mt-1">499/-</p>
+                     </div>
+                     <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                       </div>
+                   
+                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                       <a class="block relative h-48 rounded overflow-hidden">
+                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/Google-Cloud-Half-Sleeve-Navy-scaled-500x600.jpg">
+                       </a>
+                       <div class="mt-4">
+                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                         <h2 class="text-gray-900 title-font text-lg font-medium">Google-Cloud</h2>
+                         <p class="mt-1">499/-</p>
+                     </div> 
+                     <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                       </div> 
+                     
+                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full box">
+                       <a class="block relative h-48 rounded overflow-hidden">
+                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/tshirts/There-is-No-Place-Like-Black-500x600.jpg">
+                       </a>
+                       <div class="mt-4">
+                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">tshirt</h3>
+                         <h2 class="text-gray-900 title-font text-lg font-medium">There-is-No-Place-Like-Black</h2>
+                         <p class="mt-1">499/-</p>
+                     </div>
+                     <button class="price">Add to Cart</button> <button class="price">Buy</button>
+                       </div>
+                     
+                   </div>
+                 </div>
+                </div>
+              </section>
+              <div class="view-section">
+                <button class="view" onclick="show()" >View More</button>
+              </div>
+    </main>
+    <footer>
+        <section id="Contact" class="text-gray-400 bg-black body-font relative">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Us</h1>
+            </div>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+              <div class="flex flex-wrap -m-2">
+                <div class="p-2 w-1/2">
+                  <div class="relative">
+                    <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
+                    <input type="text" id="name" name="name" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                </div>
+                <div class="p-2 w-1/2">
+                  <div class="relative">
+                    <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+                    <input type="email" id="email" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                </div>
+                <div class="p-2 w-full">
+                  <div class="relative">
+                    <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
+                    <textarea id="message" name="message" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                  </div>
+                </div>
+                <div class="p-2 w-full">
+                  <button class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Submit</button>
+                </div>
+                <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+                  <a class="text-blue-400">CodeZen@gmail.com</a>
+                  <br><br>
+                  <div class="social-icons">
+                    <a href="#"> <i class="fab fa-instagram fa-2x"></i> </a>
+                    <a href="#"><i class="fab fa-facebook fa-2x"></i> </a> 
+                    <a href="#"><i class="fab fa-github fa-2x"></i> </a> 
+                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+
+      <script>
+        function show(){
+    let view = document.getElementById("hide");
+    if(view.style.display === "none"){
+      view.style.display = "block";
+    }
+    else{
+      view.style.display = "none";
+    }
+}
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+      $(window).load(function() {
+      $("#preloader").delay(1000).fadeOut("slow");
+      })
+   </script>
+  </body>
+</html>

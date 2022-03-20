@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" style="filter: invert(100%);" sizes="32x32" href="./images/favicon/favicon-1.png">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>CodeZen | Live Text Editor</title>
+    <link rel="stylesheet" href="./style/editor.css" />
+  </head>
+  <body>
+    <div class="loder">
+     <div id="preloader">
+     </div>
+    </div>
+    <header>
+      <nav class="nav-bar">
+          <a id="home" href="./index.html">
+          <i class="fas fa-home"></i> Home
+          </a>
+
+        <div class="dropdown">
+          <a class="dropbtn">
+            <i class="far fa-clipboard"></i> Cheatsheets
+          </a>
+          <div class="dropdown-content">
+            <a target="blank" href="./html-cheatsheet.html">HTML</a>
+            <a target="blank" href="./css-cheatsheet.html">CSS</a>
+            <a target="blank" href="./js-cheatsheet.html">JS</a>
+          </div>
+        </div>
+
+         <a href="./store.html"> <i class="fas fa-store"></i> Store</a>
+      </nav>
+      <!-- <p>press f1 to menu</p> -->
+      <div class="props">
+        <button id="resetBtn" onclick="reset()">Reset</button>
+        <div id="cl" class="change-layout">Change Layout</div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container view2">
+        <div class="coder view2">
+          <div class="code-editor htmlInput">
+            <div class="inputs">
+              <div class="code-type"><i class="fab fa-html5"></i> HTML</div>
+
+              <div class="themes">
+                <select name="themes" onclick="myTheme()" id="theme">
+                  <option onclick="myTheme()">Set Theme..</option>
+                  <option id="theme1" value="terminal" onclick="myTheme()">
+                    Terminal
+                  </option>
+                  <option id="theme2" value="cobalt" onclick="myTheme()">
+                    Cobalt
+                  </option>
+                  <option id="theme3" value="nord_dark" onclick="myTheme()">
+                    Nord Dark
+                  </option>
+                  <option id="theme4" value="dracula" onclick="myTheme()">
+                    Dracula
+                  </option>
+                  <option id="theme5" value="merbivore" onclick="myTheme()">
+                    Merbivore
+                  </option>
+                </select>
+              </div>
+
+              <button class="print" onclick="printDiv('html')">
+                <i class="fas fa-file-download"></i>
+              </button>
+            </div>
+            <div class="code html" id="html"></div>
+          </div>
+          <div class="code-editor cssInput">
+            <div class="inputs">
+              <div class="code-type"><i class="fab fa-css3"></i> CSS</div>
+              <div class="color-code">
+                <label for="colorpicker">Color Picker:</label>
+                <input type="color" id="colorpicker" value="#0000ff" />
+              </div>
+
+              <button class="print" onclick="printDiv('css')">
+                <i class="fas fa-file-download"></i>
+              </button>
+            </div>
+            <div class="code css" id="css"></div>
+          </div>
+          <div class="code-editor jsInput">
+            <div class="inputs">
+              <div class="code-type"><i class="fab fa-js"></i> JS</div>
+              <button class="print" onclick="printDiv('javascript')">
+                <i class="fas fa-file-download"></i>
+              </button>
+            </div>
+            <div class="code js" id="javascript"></div>
+          </div>
+        </div>
+        <div class="output">
+           <button class="print" onclick="printOutput()">Save-Output</button>
+
+          <iframe
+            src=""
+            id="virtual-iframe"
+            class="virtual-iframe"
+            name="virtual-iframe"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+      integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/app.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+   $(window).load(function() {
+   $("#preloader").delay(1000).fadeOut("slow");
+   })
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- <script>
+$(document).ready(function() {
+   $("#print1").click(function() {
+     var res = $('#html').text();
+     print(res);
+   });
+});
+$(document).ready(function() {
+   $("#print1").click(function() {
+     var res = $('#virtual-iframe').text();
+     print(res);
+   });
+});
+</script> -->
+  </body>
+</html>
